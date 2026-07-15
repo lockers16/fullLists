@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Assistant", "Rubik", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Assistant", "Rubik", sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  direction: rtl;
+}
+
+/* Custom prints optimizations */
+@media print {
+  * {
+    font-family: 'Assistant', 'Rubik', sans-serif !important;
+  }
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  .print\:hidden {
+    display: none !important;
+  }
+  .print\:block {
+    display: block !important;
+  }
+}

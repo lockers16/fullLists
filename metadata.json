@@ -1,0 +1,8 @@
+{
+  "name": "רשימות מלאות",
+  "description": "מערכת בית ספרית להצגת רשימת ספרי לימוד מותאמת אישית לפי שכבה, כיתה, הקבצות ומגמה, עם אפשרות להורדת הרשימה ומערכת ניהול לעריכת ספרי הלימוד.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
