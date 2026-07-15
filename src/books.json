@@ -1,707 +1,7236 @@
 [
   {
-    "id": "1",
-    "title": "גמרא - מסכת בבא מציעא שטיינזלץ / שוטנשטיין",
+    "id": "book-1784129549864",
+    "title": "גמרא - מסכת סוכה",
     "subject": "גמרא",
-    "author": "הוצאת קורן / שוטנשטיין",
-    "isMandatory": true,
-    "grades": ["ז"],
-    "classes": [1, 2, 3, 7],
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [
+      2,
+      3,
+      4,
+      5
+    ],
     "english": [],
     "math": [],
     "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "גמרא",
+        "classNumber": 2
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "גמרא",
+        "classNumber": 3
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "גמרא",
+        "classNumber": 4
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "גמרא",
+        "classNumber": 5
+      }
+    ]
+  },
+  {
+    "id": "book-1783876300637",
+    "title": "הלכות תפילין – חוברת עבודה \"יגעת ומצאת\" – הרב חיים אפרתי",
+    "subject": "הלכה",
+    "author": "הרב חיים אפרתי",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת – 35₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ז"
+    ],
+    "classes": [
+      6
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 6
+      }
+    ]
+  },
+  {
+    "id": "book-1782666934193",
+    "title": "תלמידי סיירת גמרא בלבד – מסכת סוכה – במקום מסכת בבא מציעא וחוברת \"והאר עינינו\"",
+    "subject": "גמרא",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
     "bookType": "ספר לימוד / קריאה",
-    "notes": "נדרש ללמוד בעיון רב"
-  },
-  {
-    "id": "2",
-    "title": "צורבא מרבנן - כרך א' מותאם",
-    "subject": "תושב\"ע",
-    "author": "הוצאת צורבא",
-    "isMandatory": false,
-    "grades": ["ז"],
-    "classes": [4, 5],
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [
+      3,
+      5
+    ],
     "english": [],
     "math": [],
     "majors": [],
-    "bookType": "חוברת עבודה",
-    "notes": "לרכוש את המהדורה החדשה בלבד"
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "classNumber": 3,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "י\"ב",
+        "classNumber": 5,
+        "subjectType": "גמרא"
+      }
+    ],
+    "order": 3
   },
   {
-    "id": "3",
-    "title": "מקראות גדולות - חומש בראשית וחומש שמות",
-    "subject": "תנ\"ך",
-    "author": "הוצאות שונות",
-    "isMandatory": true,
-    "grades": ["ז"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "4",
-    "title": "מסע אל העבר - ימי הביניים והעת החדשה",
-    "subject": "היסטוריה",
-    "author": "מטח",
-    "isMandatory": true,
-    "grades": ["ז"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "5",
-    "title": "אנגלית - Step Ahead Workbook",
-    "subject": "אנגלית",
-    "author": "ECB",
-    "isMandatory": false,
-    "grades": ["ז"],
-    "classes": [],
-    "english": ["א", "ב"],
-    "math": [],
-    "majors": [],
-    "bookType": "חוברת עבודה"
-  },
-  {
-    "id": "6",
-    "title": "אנגלית - My First Steps Reader",
-    "subject": "אנגלית",
-    "author": "ECB",
-    "isMandatory": false,
-    "grades": ["ז"],
-    "classes": [],
-    "english": ["ג' - יעל", "ג' - מימי"],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "7",
-    "title": "אנגלית - Literature Companion for Speakers",
-    "subject": "אנגלית",
-    "author": "ECB",
-    "isMandatory": false,
-    "grades": ["ז"],
-    "classes": [],
-    "english": ["דוברי אנגלית"],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "8",
-    "title": "מתמטיקה מוגבר לחטיבת הביניים - כרך א'",
-    "subject": "מתמטיקה",
-    "author": "יואל גבע",
-    "isMandatory": false,
-    "grades": ["ז"],
-    "classes": [],
-    "english": [],
-    "math": ["האצה"],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "9",
-    "title": "מתמטיקה לכיתה ז' - ספר לתלמיד",
-    "subject": "מתמטיקה",
-    "author": "בני גורן",
-    "isMandatory": false,
-    "grades": ["ז"],
-    "classes": [],
-    "english": [],
-    "math": ["לא בהאצה"],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "10",
-    "title": "חוברת יסודות ועבודה מותאמת לכיתה ז'",
-    "subject": "מתמטיקה",
-    "author": "משרד החינוך",
-    "isMandatory": false,
-    "grades": ["ז"],
-    "classes": [6],
-    "english": [],
-    "math": ["כיתת חינוך מיוחד / תקשורת"],
-    "majors": [],
-    "bookType": "חוברת עבודה"
-  },
-  {
-    "id": "11",
-    "title": "ספר גמרא - מסכת בבא קמא",
-    "subject": "גמרא",
-    "author": "הוצאות שונות",
-    "isMandatory": true,
-    "grades": ["ח"],
-    "classes": [1, 2, 3, 7],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "12",
-    "title": "צורבא מרבנן - כרך ב' הלכות מעשיות",
-    "subject": "תושב\"ע",
-    "author": "הוצאת צורבא",
-    "isMandatory": false,
-    "grades": ["ח"],
-    "classes": [4, 5],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "חוברת עבודה"
-  },
-  {
-    "id": "13",
-    "title": "ספר שמואל א' וב' עם פירוש רש\"י",
-    "subject": "תנ\"ך",
-    "author": "הוצאות שונות",
-    "isMandatory": true,
-    "grades": ["ח"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "14",
-    "title": "לשון והבעה לחטיבת הביניים - כרך ב'",
-    "subject": "לשון",
-    "author": "מטח",
-    "isMandatory": true,
-    "grades": ["ח"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "15",
-    "title": "מתמטיקה מוגבר לחטיבת הביניים - כרך ב'",
-    "subject": "מתמטיקה",
-    "author": "יואל גבע",
-    "isMandatory": false,
-    "grades": ["ח"],
-    "classes": [],
-    "english": [],
-    "math": ["האצה"],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "16",
-    "title": "מתמטיקה לכיתה ח' - ספר לתלמיד (רמה א')",
-    "subject": "מתמטיקה",
-    "author": "בני גורן",
-    "isMandatory": false,
-    "grades": ["ח"],
-    "classes": [],
-    "english": [],
-    "math": ["א", "א'1", "א'2"],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "17",
-    "title": "מתמטיקה לכיתה ח' - רמה ב' וחוברת עבודה",
-    "subject": "מתמטיקה",
-    "author": "בני גורן",
-    "isMandatory": false,
-    "grades": ["ח"],
-    "classes": [],
-    "english": [],
-    "math": ["ב"],
-    "bookType": "חוברת עבודה"
-  },
-  {
-    "id": "18",
-    "title": "חוברת יסודות ועבודה מותאמת לכיתה ח'",
-    "subject": "מתמטיקה",
-    "author": "משרד החינוך",
-    "isMandatory": false,
-    "grades": ["ח"],
-    "classes": [6],
-    "english": [],
-    "math": ["כיתת חינוך מיוחד / תקשורת"],
-    "bookType": "חוברת עבודה"
-  },
-  {
-    "id": "19",
-    "title": "ספר גמרא - מסכת סנהדרין",
-    "subject": "גמרא",
-    "author": "הוצאות שונות",
-    "isMandatory": true,
-    "grades": ["ט"],
-    "classes": [1, 2, 3, 4, 5],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "20",
-    "title": "ספר מלכים א' וב' - עם פירושים",
-    "subject": "תנ\"ך",
-    "author": "הוצאות שונות",
-    "isMandatory": true,
-    "grades": ["ט"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "21",
-    "title": "מדע וטכנולוגיה - כימיה ופיזיקה לכיתה ט'",
-    "subject": "מדעים",
-    "author": "הוצאת רכס",
-    "isMandatory": true,
-    "grades": ["ט"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "22",
-    "title": "עתודה מדעית - חוברת פיזיקה מורחבת לתלמידי עתודה",
-    "subject": "עתודה",
-    "author": "רשת אורט",
-    "isMandatory": false,
-    "grades": ["ט"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "חוברת עבודה",
-    "notes": "לחברי עתודה מדעית בלבד"
-  },
-  {
-    "id": "23",
-    "title": "הודעה: בחירת מגמות לקראת התיכון תיעשה במהלך השנה. אין לרכוש ספרי מגמות לשכבה ט'.",
-    "subject": "מגמות",
-    "author": "הנהלת הישיבה",
-    "isMandatory": true,
-    "grades": ["ט"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "24",
-    "title": "ספר גמרא - מסכת קידושין (ללמידת עיון)",
-    "subject": "גמרא",
-    "author": "הוצאות שונות",
-    "isMandatory": false,
-    "grades": ["י"],
-    "classes": [2, 3, 4, 5, 7],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "25",
-    "title": "צורבא מרבנן - הלכות שבת כרך א' וב'",
-    "subject": "תושב\"ע",
-    "author": "צורבא",
-    "isMandatory": false,
-    "grades": ["י"],
-    "classes": [1],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "חוברת עבודה"
-  },
-  {
-    "id": "26",
-    "title": "להיות אזרחים בישראל - אזרחות לחטיבה עליונה",
-    "subject": "אזרחות",
-    "author": "משרד החינוך",
-    "isMandatory": true,
-    "grades": ["י"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "27",
-    "title": "היסטוריה לחטיבה העליונה - גרסה מורחבת ומותאמת",
-    "subject": "היסטוריה",
-    "author": "מטח",
-    "isMandatory": false,
-    "grades": ["י"],
-    "classes": [5],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה",
-    "notes": "מותאם במיוחד עבור כיתה י'5"
-  },
-  {
-    "id": "28",
-    "title": "היסטוריה של הלאומיות בישראל ובעמים",
-    "subject": "היסטוריה",
-    "author": "מטח",
-    "isMandatory": false,
-    "grades": ["י"],
-    "classes": [1, 2, 3, 4, 7],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה",
-    "notes": "עבור כיתות י'1 - י'4, י'7"
-  },
-  {
-    "id": "29",
-    "title": "מתמטיקה חמש יחידות לימוד - שאלון 581 כרך א' וב'",
-    "subject": "מתמטיקה",
-    "author": "יואל גבע",
-    "isMandatory": false,
-    "grades": ["י"],
-    "classes": [],
-    "english": [],
-    "math": ["5 יח\"ל", "האצה"],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "30",
-    "title": "מתמטיקה ארבע יחידות לימוד - שאלון 481 כרך א'",
-    "subject": "מתמטיקה",
-    "author": "יואל גבע",
-    "isMandatory": false,
-    "grades": ["י"],
-    "classes": [],
-    "english": [],
-    "math": ["4 יח\"ל"],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "31",
-    "title": "מתמטיקה שלוש יחידות לימוד - שאלון 381",
-    "subject": "מתמטיקה",
-    "author": "בני גורן",
-    "isMandatory": false,
-    "grades": ["י"],
-    "classes": [],
-    "english": [],
-    "math": ["3 יח\"ל"],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "32",
-    "title": "פיזיקה - מכניקה לתיכון",
-    "subject": "פיזיקה",
-    "author": "עדי רוזן",
-    "isMandatory": false,
-    "grades": ["י", "י\"א"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": ["פיזיקה"],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "33",
-    "title": "יסודות מדעי המחשב בשפת Java - חלק א'",
-    "subject": "מדעי המחשב",
-    "author": "מבט על",
-    "isMandatory": false,
-    "grades": ["י"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": ["מדעי המחשב"],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "34",
-    "title": "ביולוגיה של האדם - התא כבסיס החיים",
-    "subject": "ביולוגיה",
-    "author": "הוצאת יסוד",
-    "isMandatory": false,
-    "grades": ["י"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": ["ביולוגיה"],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "35",
-    "title": "ספר גמרא - מסכת בבא מציעא (עיון ובקיאות)",
-    "subject": "גמרא",
-    "author": "הוצאות שונות",
-    "isMandatory": true,
-    "grades": ["י\"א"],
-    "classes": [2, 3, 4, 5],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "36",
-    "title": "ספר תנ\"ך שלם עם פירוש הרלב\"ג לחומש דברים",
-    "subject": "תנ\"ך",
-    "author": "קורן",
-    "isMandatory": true,
-    "grades": ["י\"א", "י\"ב"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "37",
-    "title": "מחשבת ישראל - אמונה וחברה ביהדות",
-    "subject": "מחשבת ישראל",
-    "author": "הוצאת מעלות",
-    "isMandatory": true,
-    "grades": ["י\"א"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "38",
-    "title": "אנגלית - Keep Ahead Workbook (5 units)",
-    "subject": "אנגלית",
-    "author": "ECB",
-    "isMandatory": false,
-    "grades": ["י\"א"],
-    "classes": [],
-    "english": ["5 יח\"ל", "5 יח\"ל - מואץ", "דוברי אנגלית"],
-    "math": [],
-    "majors": [],
-    "bookType": "חוברת עבודה"
-  },
-  {
-    "id": "39",
-    "title": "אנגלית - Reach Out Student Book (4 units)",
-    "subject": "אנגלית",
-    "author": "ECB",
-    "isMandatory": false,
-    "grades": ["י\"א"],
-    "classes": [],
-    "english": ["4 יח\"ל"],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "40",
-    "title": "אנגלית - Basic English Steps (3 units)",
-    "subject": "אנגלית",
-    "author": "ECB",
-    "isMandatory": false,
-    "grades": ["י\"א"],
-    "classes": [],
-    "english": ["3 יח\"ל"],
-    "math": [],
-    "majors": [],
-    "bookType": "חוברת עבודה"
-  },
-  {
-    "id": "41",
-    "title": "כימיה - עולם החומר והאנרגיה לתיכון",
-    "subject": "כימיה",
-    "author": "הוצאת מעלות",
-    "isMandatory": false,
-    "grades": ["י\"א", "י\"ב"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": ["כימיה"],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "42",
-    "title": "ספר סיירת גמרא מורחב - מסכת שבת וסוגיות מפתח",
-    "subject": "גמרא",
-    "author": "הוצאת הישיבה",
-    "isMandatory": false,
-    "grades": ["י\"ב"],
-    "classes": [3, 5],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה",
-    "notes": "תוספת המיועדת לכיתות י\"ב3 וי\"ב5 (מועבר גם לשאר כיתות 2-5)"
-  },
-  {
-    "id": "43",
-    "title": "גמרא ומקורות בתושב\"ע - מסלול עיוני מותאם",
-    "subject": "תושב\"ע",
-    "author": "משרד החינוך",
-    "isMandatory": false,
-    "grades": ["י\"ב"],
-    "classes": [1],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "44",
-    "title": "הבעה בכתב ובלשון - הכנה לבגרות",
-    "subject": "לשון",
-    "author": "הוצאת רכס",
-    "isMandatory": true,
-    "grades": ["י\"ב"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "45",
-    "title": "מחשבת ישראל לחטיבה עליונה - חלק ב'",
-    "subject": "מחשבת ישראל",
-    "author": "מעלות",
-    "isMandatory": true,
-    "grades": ["י\"ב"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": [],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "46",
-    "title": "מתמטיקה מיקוד והכנה לבגרות - 5 יח\"ל",
-    "subject": "מתמטיקה",
-    "author": "אדית כהן",
-    "isMandatory": false,
-    "grades": ["י\"ב"],
-    "classes": [],
-    "english": [],
-    "math": ["5 יח\"ל"],
-    "majors": [],
-    "bookType": "חוברת עבודה"
-  },
-  {
-    "id": "47",
-    "title": "מתמטיקה מיקוד והכנה לבגרות - 4 יח\"ל",
-    "subject": "מתמטיקה",
-    "author": "אדית כהן",
-    "isMandatory": false,
-    "grades": ["י\"ב"],
-    "classes": [],
-    "english": [],
-    "math": ["4 יח\"ל"],
-    "majors": [],
-    "bookType": "חוברת עבודה"
-  },
-  {
-    "id": "48",
-    "title": "מתמטיקה מיקוד והכנה לבגרות - 3 יח\"ל",
-    "subject": "מתמטיקה",
-    "author": "אדית כהן",
-    "isMandatory": false,
-    "grades": ["י\"ב"],
-    "classes": [],
-    "english": [],
-    "math": ["3 יח\"ל"],
-    "majors": [],
-    "bookType": "חוברת עבודה"
-  },
-  {
-    "id": "49",
-    "title": "ניהול עסקי - יסודות המנהל והכלכלה לתיכון",
-    "subject": "ניהול עסקי",
-    "author": "הוצאת אורט",
-    "isMandatory": false,
-    "grades": ["י\"ב"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": ["ניהול עסקי"],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "50",
-    "title": "דיני חוק ומשפט בישראל - יחידות יסוד",
-    "subject": "משפטים",
-    "author": "הוצאת דיונון",
-    "isMandatory": false,
-    "grades": ["י\"ב"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": ["משפטים"],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "51",
-    "title": "תולדות המוזיקה המערבית וניתוח יצירות מופת",
-    "subject": "מוזיקה",
-    "author": "הוצאת סל תרבות",
-    "isMandatory": false,
-    "grades": ["י\"ב"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": ["מוזיקה"],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "52",
-    "title": "תקשורת המונים וחברה בישראל - חלק א'",
+    "id": "book-1782665012834",
+    "title": "אין צורך בספרי לימוד",
     "subject": "תקשורת",
-    "author": "הוצאת עמיחי",
+    "author": "כללי",
     "isMandatory": false,
-    "grades": ["י\"ב"],
+    "notes": "",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י",
+      "י\"א",
+      "י\"ב"
+    ],
     "classes": [],
     "english": [],
     "math": [],
-    "majors": ["תקשורת"],
-    "bookType": "ספר לימוד / קריאה"
+    "majors": [
+      "תקשורת"
+    ],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "תקשורת"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "תקשורת"
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "תקשורת"
+      }
+    ]
   },
   {
-    "id": "53",
-    "title": "השפה הערבית לחטיבה העליונה - דקדוק והבנה",
-    "subject": "ערבית",
-    "author": "מפעלים חינוכיים",
-    "isMandatory": false,
-    "grades": ["י\"ב"],
-    "classes": [],
-    "english": [],
-    "math": [],
-    "majors": ["ערבית"],
-    "bookType": "ספר לימוד / קריאה"
-  },
-  {
-    "id": "54",
-    "title": "מבוא למערכות אלקטרוניות ממוחשבות",
+    "id": "book-1782664988823",
+    "title": "רכישת רכיבים לפרויקט",
     "subject": "אלקטרוניקה",
-    "author": "מפעלים",
+    "author": "כללי",
     "isMandatory": false,
-    "grades": ["י\"ב"],
+    "notes": "רכישה מרוכזת",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י\"ב"
+    ],
     "classes": [],
     "english": [],
     "math": [],
-    "majors": ["אלקטרוניקה"],
-    "bookType": "ספר לימוד / קריאה"
+    "majors": [
+      "אלקטרוניקה"
+    ],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "אלקטרוניקה"
+      }
+    ]
+  },
+  {
+    "id": "book-1782664956089",
+    "title": "ציוד לניסויים במעבדה",
+    "subject": "אלקטרוניקה",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "אלקטרוניקה"
+    ],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "אלקטרוניקה"
+      }
+    ]
+  },
+  {
+    "id": "book-1782664927593",
+    "title": "שתי חוברות בהוצאה פנימית",
+    "subject": "אלקטרוניקה",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י",
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "אלקטרוניקה"
+    ],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "אלקטרוניקה"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "אלקטרוניקה"
+      }
+    ]
+  },
+  {
+    "id": "book-1782664894598",
+    "title": "חוברת עבודה ותרגול בערבית לכיתה י\"ב",
+    "subject": "ערבית",
+    "author": "אלי מזרחי – רכישה מרוכזת ע\"י המורה",
+    "isMandatory": false,
+    "notes": "",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "ערבית"
+    ],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "ערבית"
+      }
+    ]
+  },
+  {
+    "id": "book-1782664887715",
+    "title": "חוברת עבודה ותרגול בערבית לכיתה י\"א",
+    "subject": "ערבית",
+    "author": "אלי מזרחי – רכישה מרוכזת ע\"י המורה",
+    "isMandatory": false,
+    "notes": "",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "ערבית"
+    ],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "ערבית"
+      }
+    ]
+  },
+  {
+    "id": "book-1782664873923",
+    "title": "חוברת עבודה ותרגול בערבית לכיתה י'",
+    "subject": "ערבית",
+    "author": "אלי מזרחי – רכישה מרוכזת ע\"י המורה",
+    "isMandatory": false,
+    "notes": "",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "ערבית"
+    ],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "ערבית"
+      }
+    ]
+  },
+  {
+    "id": "book-1782664787692",
+    "title": "מיקוד בפיזיקה – חשמל",
+    "subject": "פיזיקה",
+    "author": "רון הדר, הוצאת רכס",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "פיזיקה"
+    ],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "פיזיקה"
+      }
+    ]
+  },
+  {
+    "id": "book-1782664772323",
+    "title": "מיקוד בפיזיקה – מכניקה",
+    "subject": "פיזיקה",
+    "author": "רון הדר, הוצאת רכס",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "פיזיקה"
+    ],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "פיזיקה"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1782664711045",
+    "title": "ממשיכים עם החומר הקיים",
+    "subject": "ביולוגיה",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "ביולוגיה"
+    ],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "ביולוגיה"
+      }
+    ]
+  },
+  {
+    "id": "book-1782664696671",
+    "title": "התא – קורס דיגיטלי",
+    "subject": "ביולוגיה",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "רכישת הקורס באתר מט\"ח תתבצע במהלך השנה",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "ביולוגיה"
+    ],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "ביולוגיה"
+      }
+    ]
+  },
+  {
+    "id": "book-1782664684548",
+    "title": "גוף האדם – קורס דיגיטלי",
+    "subject": "ביולוגיה",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "רכישת הקורס באתר מט\"ח תתבצע במהלך השנה",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "ביולוגיה"
+    ],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "ביולוגיה"
+      }
+    ]
+  },
+  {
+    "id": "book-1782664636414",
+    "title": "כימיה פורצת דרך",
+    "subject": "כימיה",
+    "author": "הוצאת רכס",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "כימיה"
+    ],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "כימיה"
+      }
+    ]
+  },
+  {
+    "id": "book-1782664614868",
+    "title": "מיקוד בכימיה",
+    "subject": "כימיה",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "כימיה"
+    ],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "כימיה"
+      }
+    ]
+  },
+  {
+    "id": "book-1782664599730",
+    "title": "חוברת",
+    "subject": "כימיה",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "כימיה"
+    ],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "כימיה"
+      }
+    ]
+  },
+  {
+    "id": "book-1782664486363",
+    "title": "מסכת בבא בתרא – \"והאר עינינו\" – ספר עזר לבגרות, מסלול תושב\"ע – אמיתי דור",
+    "subject": "גמרא",
+    "author": "אמיתי דור",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [
+      1
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "classNumber": 1,
+        "subjectType": "גמרא"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1782664451288",
+    "title": "Excel at Bagrut Module E",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [
+      "4 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "אנגלית",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1782664417963",
+    "title": "Word Symphony - ממשיכים מהשנה שעברה",
+    "subject": "אנגלית",
+    "author": "Reach Higher",
+    "isMandatory": false,
+    "notes": "ממשיכים מהשנה שעברה / רכישה מרוכזת - 55₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [
+      "4 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "אנגלית",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1782664308302",
+    "title": "וקטורים וגיאומטריה במרחב – יפית איבטל",
+    "subject": "מתמטיקה",
+    "author": "יבנה בונוס",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "4 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "מתמטיקה",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 8
+  },
+  {
+    "id": "book-1782664265533",
+    "title": "10 בחינות מתכונת במתמטיקה לתלמידי 4 יח\"ל – שאלון 482 – לבן-אדום",
+    "subject": "מתמטיקה",
+    "author": "אדית כהן ומריאן רוזנפלד",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "4 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "מתמטיקה",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 7
+  },
+  {
+    "id": "book-1782664238576",
+    "title": "\"ביכוון הנכון עם ארכימדס\" – שאלון 472 – חלק א' + ב'",
+    "subject": "מתמטיקה",
+    "author": "הוצאת ארכימדס",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "4 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "מתמטיקה",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 6
+  },
+  {
+    "id": "book-1782664170850",
+    "title": "בני גורן – מתמטיקה – שאלון 482 (508) – חלק ג' (אדום-אפור)",
+    "subject": "מתמטיקה",
+    "author": "בני גורן",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "4 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "מתמטיקה",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 5
+  },
+  {
+    "id": "book-1782664133864",
+    "title": "מתמטיקה לכיתה י\"ב (3 יח\"ל) – חלק ב' – תכנון ליניארי, גיאומטריה במרחב, ראייה מרחבית ומתכונות (ירוק, פס כתום)",
+    "subject": "מתמטיקה",
+    "author": "יצחק שלו ואתי עוזרי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "3 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "מתמטיקה",
+        "stream": "3 יח\"ל"
+      }
+    ],
+    "order": 10
+  },
+  {
+    "id": "book-1782664075605",
+    "title": "מתמטיקה לכיתה י\"ב (3 יח\"ל) – חלק א' – התפלגות נורמלית, גיאומטריה אנליטית ומודל ריבועי (ירוק, פס צהוב)",
+    "subject": "מתמטיקה",
+    "author": "יצחק שלו ואתי עוזרי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "3 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "מתמטיקה",
+        "stream": "3 יח\"ל"
+      }
+    ],
+    "order": 9
+  },
+  {
+    "id": "book-1782663936036",
+    "title": "קובץ דפים מבית, חינוך ומשפחה",
+    "subject": "גמרא",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "ספר לימוד פנימי  – מהדורה פנימית עם פרקים מתוך הספר המקורי",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "classNumber": 1,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "י\"ב",
+        "classNumber": 2,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "י\"ב",
+        "classNumber": 3,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "י\"ב",
+        "classNumber": 4,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "י\"ב",
+        "classNumber": 5,
+        "subjectType": "גמרא"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "book-1782663888721",
+    "title": "קובץ דפים מבית, חינוך ומשפחה",
+    "subject": "תושב\"ע",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "ספר לימוד פנימי  – מהדורה פנימית עם פרקים מתוך הספר המקורי",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [
+      6
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "classNumber": 6,
+        "subjectType": "תושב\"ע"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1782663823376",
+    "title": "במעגלי המשנה",
+    "subject": "תושב\"ע",
+    "author": "סולמות",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [
+      6
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "classNumber": 6,
+        "subjectType": "תושב\"ע"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1782663660084",
+    "title": "מסכת סוכה – \"והאר עינינו\" – ספר עזר לבגרות, מסלול תושב\"ע – אמיתי דור",
+    "subject": "גמרא",
+    "author": "אמיתי דור",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [
+      1,
+      6
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "classNumber": 1,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 6,
+        "subjectType": "גמרא"
+      }
+    ]
+  },
+  {
+    "id": "book-1782663568071",
+    "title": "Excel at Bagrut Module A",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [
+      "3 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "3 יח\"ל"
+      }
+    ],
+    "order": 14
+  },
+  {
+    "id": "book-1782663520316",
+    "title": "Gateway to Module A & C - ממשיכים מהשנה שעברה",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "bookType": "חוברת עבודה",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [
+      "3 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "3 יח\"ל"
+      }
+    ],
+    "order": 13
+  },
+  {
+    "id": "book-1782663496990",
+    "title": "Word Symphony",
+    "subject": "אנגלית",
+    "author": "Reach Higher",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת - 55₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [
+      "4 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 12
+  },
+  {
+    "id": "book-1782663348748",
+    "title": "חוברת הכנה ל-Module E תירכש במהלך השנה",
+    "subject": "אנגלית",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [
+      "5 יח\"ל - מואץ"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל - מואץ"
+      }
+    ],
+    "order": 9
+  },
+  {
+    "id": "book-1782663309356",
+    "title": "Launchpad - ממשיכים מהשנה שעברה",
+    "subject": "אנגלית",
+    "author": "Reach Higher",
+    "isMandatory": false,
+    "notes": "ממשיכים מהשנה שעברה / רכישה מרוכזת – 55₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [
+      "5 יח\"ל - מואץ"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל - מואץ"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "book-1782663247420",
+    "title": "Gateway to Module G",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א",
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [
+      "5 יח\"ל - מואץ",
+      "5 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל - מואץ"
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1782663220022",
+    "title": "Bring an English-English dictionary book to every class",
+    "subject": "אנגלית",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1782663185180",
+    "title": "Sprint to Module G",
+    "subject": "אנגלית",
+    "author": "AEL",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1782663025496",
+    "title": "חוברת התפלגות נורמלית ורגרסיה",
+    "subject": "מתמטיקה",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת בהמשך",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "4 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "מתמטיקה",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 7
+  },
+  {
+    "id": "book-1782662982524",
+    "title": "מתמטיקה לכיתה י\"א (4 יח\"ל) – חלק ב'",
+    "subject": "מתמטיקה",
+    "author": "בני גורן",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "4 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "מתמטיקה",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 5
+  },
+  {
+    "id": "book-1782662958890",
+    "title": "מתמטיקה לכיתה י\"א (4 יח\"ל) – חלק א'",
+    "subject": "מתמטיקה",
+    "author": "בני גורן",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "4 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "מתמטיקה",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "book-1782662928402",
+    "title": "ארכימדס - כיתה י\"א - הכנה לבגרות במתמטיקה - שאלון 471 (מהדורת 2024, ירוק)",
+    "subject": "מתמטיקה",
+    "author": "הוצאת ארכימדס",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "4 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "מתמטיקה",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 6
+  },
+  {
+    "id": "book-1782662886394",
+    "title": "מתמטיקה לכיתה י' (4 יח\"ל) – חלק ג' (סגול) – ממשיכים מהשנה שעברה",
+    "subject": "מתמטיקה",
+    "author": "יואל גבע ואריק דז'לדטי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "4 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "מתמטיקה",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1782662856440",
+    "title": "מתמטיקה לכיתה י\"א (3 יח\"ל) – חלק ג' – אשכול פיננסי כלכלי (כחול, פס ירוק)",
+    "subject": "מתמטיקה",
+    "author": "יצחק שלו ואתי עוזרי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "3 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "מתמטיקה",
+        "stream": "3 יח\"ל"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1782662835806",
+    "title": "מתמטיקה לכיתה י\"א (3 יח\"ל) – חלק ב' – אשכול התמצאות במישור ובמרחב (כחול, פס כתום)",
+    "subject": "מתמטיקה",
+    "author": "יצחק שלו ואתי עוזרי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "3 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "מתמטיקה",
+        "stream": "3 יח\"ל"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1782662788802",
+    "title": "מתמטיקה לכיתה י\"א (3 יח\"ל) – חלק א' – אשכול מדעים וחברה (כחול, פס צהוב)",
+    "subject": "מתמטיקה",
+    "author": "יצחק שלו ואתי עוזרי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "3 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "מתמטיקה",
+        "stream": "3 יח\"ל"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1782662466548",
+    "title": "דפי עזר בלשון",
+    "subject": "לשון",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "תנ\"ך"
+      }
+    ]
+  },
+  {
+    "id": "book-1782662343858",
+    "title": "עוד לא נקבעה התוכנית, יש לעקוב אחרי עדכונים בקבוצות הווטסאפ של השכבה",
+    "subject": "גמרא",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "classNumber": 2,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 3,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 4,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 5,
+        "subjectType": "תנ\"ך"
+      }
+    ]
+  },
+  {
+    "id": "book-1782662255108",
+    "title": "חוברת עבודה – מסכת קידושין",
+    "subject": "גמרא",
+    "author": "הרב נעם פניגשטיין",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [
+      1
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "classNumber": 1,
+        "subjectType": "גמרא"
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1782662243506",
+    "title": "קובץ דפי גמרא – מסכת קידושין",
+    "subject": "גמרא",
+    "author": "הרב נעם פניגשטיין",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [
+      1
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "classNumber": 1,
+        "subjectType": "גמרא"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1782662110042",
+    "title": "Gateway to Module A & C",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "bookType": "חוברת עבודה",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [
+      "3-4 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "3-4 יח\"ל"
+      }
+    ],
+    "order": 11
+  },
+  {
+    "id": "book-1782662028762",
+    "title": "Literature Program - 4 points - Option 2 - UPP",
+    "subject": "אנגלית",
+    "author": "UPP",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [
+      "4 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 9
+  },
+  {
+    "id": "book-1782662011421",
+    "title": "New High Five - Workbook",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י",
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [
+      "5 יח\"ל - מואץ",
+      "5 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל - מואץ"
+      },
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל"
+      }
+    ],
+    "order": 6
+  },
+  {
+    "id": "book-1782661986861",
+    "title": "Viewpoints -Workbook",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י",
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [
+      "4 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "4 יח\"ל"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 11
+  },
+  {
+    "id": "book-1782661976833",
+    "title": "Viewpoints - Student's Book",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י",
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [
+      "4 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "4 יח\"ל"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 10
+  },
+  {
+    "id": "book-1782661916570",
+    "title": "Expand 2",
+    "subject": "אנגלית",
+    "author": "Reach Higher",
+    "isMandatory": false,
+    "notes": "ממשיכים מהשנה שעברה / רכישה מרוכזת – 55₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [
+      "5 יח\"ל",
+      "4 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל"
+      },
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 10
+  },
+  {
+    "id": "book-1782661883357",
+    "title": "Launchpad",
+    "subject": "אנגלית",
+    "author": "Reach Higher",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת – 55₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י",
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [
+      "5 יח\"ל - מואץ",
+      "5 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל - מואץ"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל"
+      }
+    ],
+    "order": 7
+  },
+  {
+    "id": "book-1782661824228",
+    "title": "חוברת עבודה נוספת תירכש במרוכז",
+    "subject": "אנגלית",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "book-1782661800074",
+    "title": "Novel - Night - by Elie Wiesel",
+    "subject": "אנגלית",
+    "author": "Elie Wiesel / אלי ויזל",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1782661744439",
+    "title": "Literature Program - 5 points - Option 2 - UPP",
+    "subject": "אנגלית",
+    "author": "UPP",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית",
+      "5 יח\"ל - מואץ",
+      "5 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      },
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל - מואץ"
+      },
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1782661640000",
+    "title": "ייתכן שספרים נוספים יירכשו בתחילת השנה",
+    "subject": "מתמטיקה",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י",
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "האצה",
+      "5 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "מתמטיקה",
+        "stream": "5 יח\"ל"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "book-1782661602656",
+    "title": "10 בחינות מתכונת במתמטיקה לתלמידי 5 יח\"ל – שאלון 582 – לבן-כתום",
+    "subject": "מתמטיקה",
+    "author": "אדית כהן ומריאן רוזנפלד",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י",
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "האצה",
+      "5 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "מתמטיקה",
+        "stream": "5 יח\"ל"
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1782661375685",
+    "title": "חוברת עבודה בתנ\"ך – ספר מלכים – הכנה לבגרות (כיתות י'–י\"א) – שאלון 2551",
+    "subject": "תנ\"ך",
+    "author": "אליצור עמנואל",
+    "isMandatory": false,
+    "notes": "ממשיכים מהשנה שעברה / רכישה מרוכזת דרך הישיבה במהלך השנה (נחשב כמיקודית) – 30₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "classNumber": 2,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 3,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 4,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 5,
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1782661154993",
+    "title": "חוברת עבודה בתנ\"ך – ספר מלכים – הכנה לבגרות (כיתות י'–י\"א)",
+    "subject": "תנ\"ך",
+    "author": "אליצור עמנואל",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת (נחשב כמיקודית) – 30₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י"
+    ],
+    "classes": [
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "classNumber": 2,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "י",
+        "classNumber": 3,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "י",
+        "classNumber": 4,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "י",
+        "classNumber": 5,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "י",
+        "classNumber": 7,
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1782376116267",
+    "title": "ארכימדס – כיתה י' – תרגול והכנה למבחנים במתמטיקה – שאלון 471 (לבן-ירוק, עיגול כתום)",
+    "subject": "מתמטיקה",
+    "author": "הוצאת ארכימדס",
+    "isMandatory": false,
+    "notes": "",
+    "bookType": "ספר לימוד / קריאה",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "4 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 6
+  },
+  {
+    "id": "book-1782375980356",
+    "title": "מתמטיקה לכיתה י' (4 יח\"ל) – חלק ג' (סגול) – יועבר משכבה י\"א בהמשך השנה",
+    "subject": "מתמטיקה",
+    "author": "יואל גבע ואריק דז'לדטי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "4 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 5
+  },
+  {
+    "id": "book-1782375964769",
+    "title": "מתמטיקה לכיתה י' (4 יח\"ל) – חלק ב' (ירוק)",
+    "subject": "מתמטיקה",
+    "author": "יואל גבע ואריק דז'לדטי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "4 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "book-1782375952695",
+    "title": "מתמטיקה לכיתה י' (4 יח\"ל) – חלק א' (כחול)",
+    "subject": "מתמטיקה",
+    "author": "יואל גבע ואריק דז'לדטי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "4 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1782375837188",
+    "title": "מתמטיקה לכיתה י' (3 יח\"ל) – חלק ג' – אשכול פיננסי כלכלי (סגול, פס ירוק)",
+    "subject": "מתמטיקה",
+    "author": "יצחק שלו ואתי עוזרי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "3 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "3 יח\"ל"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1782375812092",
+    "title": "מתמטיקה לכיתה י' (3 יח\"ל) – חלק ב' – אשכול התמצאות במישור ובמרחב (סגול, פס כתום)",
+    "subject": "מתמטיקה",
+    "author": "יצחק שלו ואתי עוזרי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "3 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "3 יח\"ל"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1782375757272",
+    "title": "מתמטיקה לכיתה י' (3 יח\"ל) – חלק א' – אשכול מדעים וחברה (סגול, פס צהוב)",
+    "subject": "מתמטיקה",
+    "author": "יצחק שלו ואתי עוזרי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "3 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "3 יח\"ל"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1782375612550",
+    "title": "תוכנית \"באר\" – אין ספרי לימוד – יש להצטייד בעכבר ובאוזניות למחשב",
+    "subject": "היסטוריה",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "י",
+      "י\"א"
+    ],
+    "classes": [
+      2,
+      3,
+      5,
+      7,
+      4
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "classNumber": 2,
+        "subjectType": "היסטוריה"
+      },
+      {
+        "grade": "י",
+        "classNumber": 3,
+        "subjectType": "היסטוריה"
+      },
+      {
+        "grade": "י",
+        "classNumber": 5,
+        "subjectType": "היסטוריה"
+      },
+      {
+        "grade": "י",
+        "classNumber": 7,
+        "subjectType": "היסטוריה"
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 3,
+        "subjectType": "היסטוריה"
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 4,
+        "subjectType": "היסטוריה"
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1782375558762",
+    "title": "חוברת עבודה – \"עכשיו עברית\" לכיתה ט' – ממשיכים מהשנה שעברה",
+    "subject": "לשון",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "ממשיכים מהשנה שעברה",
+    "bookType": "חוברת עבודה",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "לשון"
+      }
+    ]
+  },
+  {
+    "id": "book-1782375094734",
+    "title": "תפילה כמפגש",
+    "subject": "תושב\"ע",
+    "author": "מרכז הלכה והוראה",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט",
+      "י",
+      "י\"א"
+    ],
+    "classes": [
+      6,
+      1
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "classNumber": 6,
+        "subjectType": "תושב\"ע"
+      },
+      {
+        "grade": "י",
+        "classNumber": 6,
+        "subjectType": "תושב\"ע"
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 1,
+        "subjectType": "תושב\"ע"
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 6,
+        "subjectType": "תושב\"ע"
+      }
+    ]
+  },
+  {
+    "id": "book-1782375028254",
+    "title": "אסופת סוגיות עיון במסכת קידושין",
+    "subject": "גמרא",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "חוברת פנימית – מי שלא בתוכנית השאלת הספרים נדרש לרכוש במזומן בימי החלוקה",
+    "grades": [
+      "י"
+    ],
+    "classes": [
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "classNumber": 2,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "י",
+        "classNumber": 3,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "י",
+        "classNumber": 4,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "י",
+        "classNumber": 5,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "י",
+        "classNumber": 7,
+        "subjectType": "גמרא"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1782374932813",
+    "title": "מתמטיקה בראיה אחרת",
+    "subject": "מתמטיקה",
+    "author": "רוחמה ויונטה ושלמה בן-בסט",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "כיתת חינוך מיוחד / תקשורת"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "כיתת חינוך מיוחד / תקשורת"
+      }
+    ],
+    "order": 15
+  },
+  {
+    "id": "book-1782373966995",
+    "title": "מתמטיקה לכיתה ט' – \"אפשר גם אחרת\" (כתום) – חלקים א' + ב'",
+    "subject": "מתמטיקה",
+    "author": "משרד החינוך, הטכניון, האוניברסיטה העברית",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "א'2"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "א'2"
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1782323459713",
+    "title": "ספר שמואל ב'",
+    "subject": "תנ\"ך",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "ספר עם פירושי רש\"י ומצודות (שמואל א' או שמואל א'-ב')",
+    "grades": [
+      "ט"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "תנ\"ך",
+        "classNumber": 1
+      },
+      {
+        "grade": "ט",
+        "subjectType": "תנ\"ך",
+        "classNumber": 2
+      },
+      {
+        "grade": "ט",
+        "subjectType": "תנ\"ך",
+        "classNumber": 3
+      },
+      {
+        "grade": "ט",
+        "subjectType": "תנ\"ך",
+        "classNumber": 4
+      },
+      {
+        "grade": "ט",
+        "subjectType": "תנ\"ך",
+        "classNumber": 5
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1782323008273",
+    "title": "סטטיסטיקה והסתברות – פנינה הוד-גלבוע",
+    "subject": "מתמטיקה",
+    "author": "הוצאת דוד",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [
+      6
+    ],
+    "english": [],
+    "math": [
+      "כיתת חינוך מיוחד / תקשורת"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "classNumber": 6,
+        "subjectType": "מתמטיקה",
+        "stream": "כיתת חינוך מיוחד / תקשורת"
+      }
+    ],
+    "order": 7
+  },
+  {
+    "id": "book-1782322929676",
+    "title": "קרא כצבי – חלק 7",
+    "subject": "לשון",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [
+      6
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "classNumber": 6,
+        "subjectType": "לשון"
+      }
+    ]
+  },
+  {
+    "id": "book-1782322856627",
+    "title": "ספר שופטים",
+    "subject": "תנ\"ך",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "ספר כולל פירושי רש\"י ומצודות (שופטים או יהושע-שופטים)",
+    "grades": [
+      "ח"
+    ],
+    "classes": [
+      6
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "תנ\"ך",
+        "classNumber": 6
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1782322796969",
+    "title": "מסכת מגילה",
+    "subject": "משנה",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [
+      6
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "classNumber": 6,
+        "subjectType": "תושב\"ע"
+      }
+    ]
+  },
+  {
+    "id": "book-1782322780645",
+    "title": "מסכת ברכות",
+    "subject": "משנה",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [
+      6
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "classNumber": 6,
+        "subjectType": "תושב\"ע"
+      }
+    ]
+  },
+  {
+    "id": "book-1782322630885",
+    "title": "Unseens Plus 3",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת – 55₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [
+      "א"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "א"
+      }
+    ],
+    "order": 7
+  },
+  {
+    "id": "book-1782322438014",
+    "title": "חוברת עבודה \"עכשיו מדעים\" לכיתה ז'",
+    "subject": "מדעים",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "יש לשלם על הקורס לקבלת החוברת",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ח"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "מדעים",
+        "classNumber": 1
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מדעים",
+        "classNumber": 2
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מדעים",
+        "classNumber": 3
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מדעים",
+        "classNumber": 4
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מדעים",
+        "classNumber": 5
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מדעים",
+        "classNumber": 7
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1782322414760",
+    "title": "קורס מקוון \"עכשיו מדעים\" לכיתה ח'",
+    "subject": "מדעים",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "תשלום בקישור נפרד – 60₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ח"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "מדעים",
+        "classNumber": 1
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מדעים",
+        "classNumber": 2
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מדעים",
+        "classNumber": 3
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מדעים",
+        "classNumber": 4
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מדעים",
+        "classNumber": 5
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מדעים",
+        "classNumber": 7
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1782321950683",
+    "title": "מסכת ברכות – משניות מאירות (חשין)",
+    "subject": "משנה",
+    "author": "משניות מאירות – חשין",
+    "isMandatory": false,
+    "notes": "נמצא אצל הרב יונתן הלוי",
+    "grades": [
+      "ז"
+    ],
+    "classes": [
+      6
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "classNumber": 6,
+        "subjectType": "תושב\"ע"
+      }
+    ]
+  },
+  {
+    "id": "book-1782321881183",
+    "title": "Ready To Go - Workbook",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [
+      "ג' - מימי"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "ג' - מימי"
+      }
+    ],
+    "order": 14
+  },
+  {
+    "id": "book-1782321866275",
+    "title": "Ready To Go - Student's Book",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [
+      "ג' - מימי"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "ג' - מימי"
+      }
+    ],
+    "order": 13
+  },
+  {
+    "id": "book-1782321765965",
+    "title": "Unseens Plus 1",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת – 55₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [
+      "ב"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "ב"
+      }
+    ],
+    "order": 10
+  },
+  {
+    "id": "book-1782321510618",
+    "title": "השנה תחל תוכנית חדשה במתמטיקה בשכבה ז', רשימת ספרים נוספים תינתן במהלך החופשה",
+    "subject": "מתמטיקה",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "האצה"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1782321481532",
+    "title": "השנה תחל תוכנית חדשה במתמטיקה בשכבה ז', רשימת הספרים תינתן במהלך החופשה",
+    "subject": "מתמטיקה",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "לא בהאצה",
+      "כיתת חינוך מיוחד / תקשורת"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "מתמטיקה",
+        "stream": "לא בהאצה"
+      },
+      {
+        "grade": "ז",
+        "subjectType": "מתמטיקה",
+        "stream": "כיתת חינוך מיוחד / תקשורת"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1782321388952",
+    "title": "חוברת עבודה \"עכשיו מדעים\" לכיתה ז'",
+    "subject": "מדעים",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "יש לשלם על הקורס לקבלת החוברת",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ז"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "מדעים",
+        "classNumber": 1
+      },
+      {
+        "grade": "ז",
+        "subjectType": "מדעים",
+        "classNumber": 2
+      },
+      {
+        "grade": "ז",
+        "subjectType": "מדעים",
+        "classNumber": 3
+      },
+      {
+        "grade": "ז",
+        "subjectType": "מדעים",
+        "classNumber": 4
+      },
+      {
+        "grade": "ז",
+        "subjectType": "מדעים",
+        "classNumber": 5
+      },
+      {
+        "grade": "ז",
+        "subjectType": "מדעים",
+        "classNumber": 7
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1782321367148",
+    "title": "קורס מקוון \"עכשיו מדעים\" לכיתה ז'",
+    "subject": "מדעים",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "תשלום בקישור נפרד – 60₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ז"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "מדעים",
+        "classNumber": 1
+      },
+      {
+        "grade": "ז",
+        "subjectType": "מדעים",
+        "classNumber": 2
+      },
+      {
+        "grade": "ז",
+        "subjectType": "מדעים",
+        "classNumber": 3
+      },
+      {
+        "grade": "ז",
+        "subjectType": "מדעים",
+        "classNumber": 4
+      },
+      {
+        "grade": "ז",
+        "subjectType": "מדעים",
+        "classNumber": 5
+      },
+      {
+        "grade": "ז",
+        "subjectType": "מדעים",
+        "classNumber": 7
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1782321283553",
+    "title": "מדעי החיים לכיתה ז'",
+    "subject": "מדעים",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "מדעים"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1782321270384",
+    "title": "מדעי החומר לכיתה ז'",
+    "subject": "מדעים",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "מדעים"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1782320584731",
+    "title": "מסכת קידושין – חוברת עבודה  – אור לגמרא",
+    "subject": "גמרא",
+    "author": "אור לגמרא",
+    "isMandatory": false,
+    "notes": "יש לשלם ברכישה מרוכזת על הספר והחוברת (ביחד) – 60₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ז",
+      "ח"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "גמרא",
+        "classNumber": 1
+      },
+      {
+        "grade": "ז",
+        "classNumber": 2,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ז",
+        "classNumber": 3,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ז",
+        "classNumber": 4,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ז",
+        "classNumber": 5,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ז",
+        "classNumber": 7,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ח",
+        "classNumber": 1,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ח",
+        "classNumber": 2,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ח",
+        "classNumber": 3,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ח",
+        "classNumber": 4,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ח",
+        "classNumber": 5,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ח",
+        "classNumber": 7,
+        "subjectType": "גמרא"
+      }
+    ]
+  },
+  {
+    "id": "book-1782233181280",
+    "title": "בתחילת השנה יתקיים שיבוץ למגמות ותינתן רשימת הספרים למגמות השונות",
+    "subject": "מגמות",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "מגמות"
+      }
+    ]
+  },
+  {
+    "id": "book-1781883304125",
+    "title": "מתמטיקה לכיתה י\"א (5 יח\"ל) – חוברת מלווה לתוכנית החדשה – בני גורן",
+    "subject": "מתמטיקה",
+    "author": "בני גורן",
+    "isMandatory": false,
+    "notes": "",
+    "bookType": "ספר לימוד / קריאה",
+    "grades": [
+      "י\"א",
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "5 יח\"ל",
+      "האצה"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "מתמטיקה",
+        "stream": "5 יח\"ל"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      }
+    ],
+    "order": 12
+  },
+  {
+    "id": "book-1781883193601",
+    "title": "להיות אזרחים בישראל – במדינה יהודית דמוקרטית – מהדורה חדשה",
+    "subject": "אזרחות",
+    "author": "הוצאת ת\"ל",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "אזרחות"
+      }
+    ]
+  },
+  {
+    "id": "book-1781882978840",
+    "title": "ואלה תולדות – ימי הבית השני ותקופת המשנה והתלמוד: הנהגה, חברה ודת – אורלי אילני",
+    "subject": "היסטוריה",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "היסטוריה"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1781882928642",
+    "title": "ואלה תולדות – היהודים בימי הביניים בעולם הנוצרי ובעולם המוסלמי – אורלי אילני",
+    "subject": "היסטוריה",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "היסטוריה"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1781882721495",
+    "title": "חשמל ומגנטיות, כרך ב' – מגנטיות – ד\"ר עיסאם זועבי",
+    "subject": "פיזיקה",
+    "author": "הוצאת ראמוס",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "פיזיקה"
+    ],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "פיזיקה"
+      }
+    ]
+  },
+  {
+    "id": "book-1781882709414",
+    "title": "חשמל ומגנטיות, כרך א' – חשמל – ד\"ר עיסאם זועבי",
+    "subject": "פיזיקה",
+    "author": "הוצאת ראמוס",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "פיזיקה"
+    ],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "פיזיקה"
+      }
+    ]
+  },
+  {
+    "id": "book-1781882611464",
+    "title": "קרינה וחומר, כרך א' – אופטיקה גאומטרית – עדי רוזן",
+    "subject": "פיזיקה",
+    "author": "מכון ויצמן למדע",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "פיזיקה"
+    ],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "פיזיקה"
+      }
+    ]
+  },
+  {
+    "id": "book-1781882553260",
+    "title": "מכניקה ניוטונית – כרך ב' – עדי רוזן",
+    "subject": "פיזיקה",
+    "author": "מכון ויצמן למדע",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "פיזיקה"
+    ],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "פיזיקה"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1781882544307",
+    "title": "מכניקה ניוטונית – כרך א' – עדי רוזן",
+    "subject": "פיזיקה",
+    "author": "מכון ויצמן למדע",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י",
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "פיזיקה"
+    ],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "פיזיקה"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "פיזיקה"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1781264508380",
+    "title": "במעגלי ההלכה – דינים ומבוא למסלול תושב\"ע (סגול)",
+    "subject": "הלכה",
+    "author": "סולמות / מרכז הלכה והוראה",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י",
+      "ט"
+    ],
+    "classes": [
+      1,
+      6
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "classNumber": 1,
+        "subjectType": "הלכה"
+      },
+      {
+        "grade": "י",
+        "classNumber": 6,
+        "subjectType": "הלכה"
+      },
+      {
+        "grade": "ט",
+        "classNumber": 6,
+        "subjectType": "הלכה"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1781264472010",
+    "title": "במעגלי ההלכה – דינים ומבוא למסלול תלמוד (כתום)",
+    "subject": "הלכה",
+    "author": "סולמות / מרכז הלכה והוראה",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "הלכה",
+        "classNumber": 2
+      },
+      {
+        "grade": "י",
+        "classNumber": 3,
+        "subjectType": "הלכה"
+      },
+      {
+        "grade": "י",
+        "classNumber": 4,
+        "subjectType": "הלכה"
+      },
+      {
+        "grade": "י",
+        "classNumber": 5,
+        "subjectType": "הלכה"
+      },
+      {
+        "grade": "י",
+        "classNumber": 7,
+        "subjectType": "הלכה"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1781264203254",
+    "title": "Take Off - Workbook",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [
+      "ג' - מימי"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "ג' - מימי"
+      }
+    ],
+    "order": 12
+  },
+  {
+    "id": "book-1781264108034",
+    "title": "New DIrections Alternative - Workbook",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [
+      "ג' - יעל",
+      "ג' - מימי"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "ג' - יעל"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "ג' - מימי"
+      }
+    ],
+    "order": 11
+  },
+  {
+    "id": "book-1781264092076",
+    "title": "New Directions Alternative - Student's Book",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [
+      "ג' - יעל",
+      "ג' - מימי"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "ג' - יעל"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "ג' - מימי"
+      }
+    ],
+    "order": 10
+  },
+  {
+    "id": "book-1781264054576",
+    "title": "Heads Up - Workbook",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [
+      "ב"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "ב"
+      }
+    ],
+    "order": 8
+  },
+  {
+    "id": "book-1781264042244",
+    "title": " Heads Up - Student's Book",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [
+      "ב"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "ב"
+      }
+    ],
+    "order": 7
+  },
+  {
+    "id": "book-1781264007560",
+    "title": "Expand 2",
+    "subject": "אנגלית",
+    "author": "Reach Higher",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת – 55₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [
+      "א",
+      "ב"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "א"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "ב"
+      }
+    ],
+    "order": 9
+  },
+  {
+    "id": "book-1781263930056",
+    "title": "Mindset Plus - Workbook",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [
+      "א"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "א"
+      }
+    ],
+    "order": 6
+  },
+  {
+    "id": "book-1781263916064",
+    "title": "Mindset Plus - Student's Book",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [
+      "א"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "א"
+      }
+    ],
+    "order": 5
+  },
+  {
+    "id": "book-1781263889155",
+    "title": "Novel - The Miracle Worker - William Gibson (The Play)",
+    "subject": "אנגלית",
+    "author": "William Gibson",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1781263838710",
+    "title": "Sadlier Vocabulary Workshop - Level D",
+    "subject": "אנגלית",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "הזמנה עצמאית על ידי ההורים דרך WizKids",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1781263825254",
+    "title": "Pearson New Keystone - Level D - Workbook",
+    "subject": "אנגלית",
+    "author": "Pearson",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1781263816744",
+    "title": "Pearson New Keystone - Level D - Student's Book",
+    "subject": "אנגלית",
+    "author": "Pearson",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1781263594169",
+    "title": "ספר נוסף יירכש בהמשך השנה",
+    "subject": "מתמטיקה",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [
+      6
+    ],
+    "english": [],
+    "math": [
+      "ב",
+      "כיתת חינוך מיוחד / תקשורת"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "ב"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "כיתת חינוך מיוחד / תקשורת",
+        "classNumber": 6
+      }
+    ],
+    "order": 6
+  },
+  {
+    "id": "book-1781263535075",
+    "title": "קפיצה לגובה (קפ\"ל) לכיתה ט' – חלקים א' וב'",
+    "subject": "מתמטיקה",
+    "author": "משרד החינוך",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "ב"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "ב"
+      }
+    ],
+    "order": 5
+  },
+  {
+    "id": "book-1781263511073",
+    "title": "אוסף נושאים במתמטיקה לכיתה ט' – יצחק שלו ואתי עוזרי (בורדו)",
+    "subject": "מתמטיקה",
+    "author": "יצחק שלו ואתי עוזרי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "א'2"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "א'2"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "book-1781263337645",
+    "title": "ישראל – האדם והמרחב",
+    "subject": "גיאוגרפיה",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "גיאוגרפיה"
+      }
+    ]
+  },
+  {
+    "id": "book-1781263303569",
+    "title": "אזרחות במדינת ישראל – דוד שחר",
+    "subject": "אזרחות",
+    "author": "כנרת זמורה דביר",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "אזרחות"
+      }
+    ]
+  },
+  {
+    "id": "book-1781263093903",
+    "title": "חוברת עבודה – פניני הלכה – תפילה",
+    "subject": "הלכה",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "חוברת עבודה – מי שלא בתוכנית השאלת הספרים נדרש לרכוש במזומן בימי החלוקה",
+    "grades": [
+      "ט"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "הלכה",
+        "classNumber": 1
+      },
+      {
+        "grade": "ט",
+        "classNumber": 2,
+        "subjectType": "הלכה"
+      },
+      {
+        "grade": "ט",
+        "classNumber": 3,
+        "subjectType": "הלכה"
+      },
+      {
+        "grade": "ט",
+        "classNumber": 4,
+        "subjectType": "הלכה"
+      },
+      {
+        "grade": "ט",
+        "classNumber": 5,
+        "subjectType": "הלכה"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1781263069420",
+    "title": "פניני הלכה – תפילה",
+    "subject": "הלכה",
+    "author": "מכון הר ברכה",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "הלכה",
+        "classNumber": 1
+      },
+      {
+        "grade": "ט",
+        "classNumber": 2,
+        "subjectType": "הלכה"
+      },
+      {
+        "grade": "ט",
+        "classNumber": 3,
+        "subjectType": "הלכה"
+      },
+      {
+        "grade": "ט",
+        "classNumber": 4,
+        "subjectType": "הלכה"
+      },
+      {
+        "grade": "ט",
+        "classNumber": 5,
+        "subjectType": "הלכה"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1781263000370",
+    "title": "חוברת עבודה למסכת ברכות",
+    "subject": "גמרא",
+    "author": "הוצאה פנימית – הרב רונן כהן",
+    "isMandatory": false,
+    "notes": "חוברת עבודה – מי שלא בתוכנית השאלת הספרים נדרש לרכוש במזומן בימי החלוקה",
+    "grades": [
+      "ט"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "classNumber": 1,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ט",
+        "classNumber": 2,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ט",
+        "classNumber": 3,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ט",
+        "classNumber": 4,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ט",
+        "classNumber": 5,
+        "subjectType": "גמרא"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780932070493",
+    "title": "Take Off - Student's Book",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [
+      "ג' - מימי"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "ג' - מימי"
+      }
+    ],
+    "order": 11
+  },
+  {
+    "id": "book-1780932015509",
+    "title": "Join Us - Workbook",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [
+      "ב"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "ב"
+      }
+    ],
+    "order": 9
+  },
+  {
+    "id": "book-1780932000959",
+    "title": "Join Us - Student's Book",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [
+      "ב"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "ב"
+      }
+    ],
+    "order": 8
+  },
+  {
+    "id": "book-1780931974357",
+    "title": "New DIrections - Workbook",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [
+      "א"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "א"
+      }
+    ],
+    "order": 6
+  },
+  {
+    "id": "book-1780931966233",
+    "title": "New Directions - Student's Book",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [
+      "א"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "א"
+      }
+    ],
+    "order": 5
+  },
+  {
+    "id": "book-1780931840839",
+    "title": "Novel - The Giver - Lois Lowry",
+    "subject": "אנגלית",
+    "author": "Lois Lowry",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1780931811937",
+    "title": "Sadlier Vocabulary Workshop - Level C",
+    "subject": "אנגלית",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "הזמנה עצמאית על ידי ההורים דרך WizKids",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1780931796655",
+    "title": "Pearson New Keystone - Level C - Student's Book",
+    "subject": "אנגלית",
+    "author": "Pearson",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780931786003",
+    "title": "Pearson New Keystone - Level C - Workbook",
+    "subject": "אנגלית",
+    "author": "Pearson",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780931739263",
+    "title": "ייתכן שספר נוסף יירכש בהמשך",
+    "subject": "מתמטיקה",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח",
+      "ט",
+      "י",
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "האצה",
+      "5 יח\"ל",
+      "4 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "5 יח\"ל"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "מתמטיקה",
+        "stream": "4 יח\"ל"
+      }
+    ],
+    "order": 8
+  },
+  {
+    "id": "book-1780931609605",
+    "title": "קפיצה לגובה (קפ\"ל) לכיתה ח' – חלקים א' וב'",
+    "subject": "מתמטיקה",
+    "author": "משרד החינוך",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "ב",
+      "כיתת חינוך מיוחד / תקשורת"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "מתמטיקה",
+        "stream": "ב"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מתמטיקה",
+        "stream": "כיתת חינוך מיוחד / תקשורת"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780931536585",
+    "title": "אוגדן פעילויות לכיתה ח'",
+    "subject": "עתודה מדעית טכנולוגית",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "עתודה"
+      }
+    ]
+  },
+  {
+    "id": "book-1780931508817",
+    "title": "מדעי החיים לכיתה ח'",
+    "subject": "מדעים",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "מדעים"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780931499538",
+    "title": "מדעי החומר לכיתה ח'",
+    "subject": "מדעים",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "מדעים"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780931442954",
+    "title": "ניצני גאולה",
+    "subject": "היסטוריה",
+    "author": "מכון הר ברכה",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "היסטוריה"
+      }
+    ]
+  },
+  {
+    "id": "book-1780931380797",
+    "title": "סיירת תנ\"ך – חוברת עבודה",
+    "subject": "תנ\"ך",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "אותה החוברת מהשנה שעברה; אפשר לקנות חדשה במזומן בימי החלוקה אם לא נשארה מהשנה הקודמת.",
+    "grades": [
+      "ח"
+    ],
+    "classes": [
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "classNumber": 4,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "ח",
+        "classNumber": 5,
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 5
+  },
+  {
+    "id": "book-1780931291364",
+    "title": "חוברת עבודה לחומש שמות",
+    "subject": "תנ\"ך",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "חוברת עבודה – מי שלא בתוכנית השאלת הספרים נדרש לרכוש במזומן בימי החלוקה",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780931246007",
+    "title": "חוברת עבודה – פניני הלכה – שבת א'",
+    "subject": "הלכה",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "חוברת עבודה – מי שלא בתוכנית השאלת הספרים נדרש לרכוש במזומן בימי החלוקה",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "הלכה"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780931234703",
+    "title": "פניני הלכה – שבת א'",
+    "subject": "הלכה",
+    "author": "מכון הר ברכה",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "הלכה"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780931102501",
+    "title": "מילון עברי/אנגלי-אנגלי/עברי או מילונית אלקטרונית מאושרת",
+    "subject": "אנגלית",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ז",
+      "ח",
+      "ט",
+      "י",
+      "י\"א",
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית",
+      "א",
+      "ב",
+      "ג' - יעל",
+      "ג' - מימי",
+      "5 יח\"ל - מואץ",
+      "5 יח\"ל",
+      "4 יח\"ל",
+      "3-4 יח\"ל",
+      "3 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      },
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "א"
+      },
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "ב"
+      },
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "ג' - יעל"
+      },
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "ג' - מימי"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "א"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "ב"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "ג' - יעל"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "ג' - מימי"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "א"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "ב"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "ג' - יעל"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "ג' - מימי"
+      },
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      },
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל - מואץ"
+      },
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל"
+      },
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "4 יח\"ל"
+      },
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "3-4 יח\"ל"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל - מואץ"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "4 יח\"ל"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "3 יח\"ל"
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל"
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "אנגלית",
+        "stream": "4 יח\"ל"
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "אנגלית",
+        "stream": "3 יח\"ל"
+      }
+    ],
+    "order": 15
+  },
+  {
+    "id": "book-1780930857788",
+    "title": "חוברת תרגול קריאה תירכש בהמשך השנה ע\"י ההורים",
+    "subject": "אנגלית",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "רכישה ע\"י ההורים",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [
+      "ג' - מימי"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "ג' - מימי"
+      }
+    ],
+    "order": 15
+  },
+  {
+    "id": "book-1780930823966",
+    "title": "Thumbs Up - Workbook",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [
+      "ג' - יעל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "ג' - יעל"
+      }
+    ],
+    "order": 12
+  },
+  {
+    "id": "book-1780930805612",
+    "title": "Thumbs Up - Student's Book",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [
+      "ג' - יעל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "ג' - יעל"
+      }
+    ],
+    "order": 11
+  },
+  {
+    "id": "book-1780930755602",
+    "title": "Sky High Alternative - Workbook",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז",
+      "ח"
+    ],
+    "classes": [],
+    "english": [
+      "ב",
+      "ג' - יעל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "ב"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "ג' - יעל"
+      }
+    ],
+    "order": 14
+  },
+  {
+    "id": "book-1780930741190",
+    "title": "Sky High Alternative - Student's Book",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז",
+      "ח"
+    ],
+    "classes": [],
+    "english": [
+      "ב",
+      "ג' - יעל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "ב"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "ג' - יעל"
+      }
+    ],
+    "order": 13
+  },
+  {
+    "id": "book-1780930716080",
+    "title": "Unseens Plus 2",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת – 55₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ז",
+      "ח",
+      "י"
+    ],
+    "classes": [],
+    "english": [
+      "א",
+      "ב",
+      "3-4 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "א"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "ב"
+      },
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "3-4 יח\"ל"
+      }
+    ],
+    "order": 12
+  },
+  {
+    "id": "book-1780930653634",
+    "title": "TeamWork - Workbook",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [
+      "א"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "א"
+      }
+    ],
+    "order": 6
+  },
+  {
+    "id": "book-1780930634488",
+    "title": "TeamWork - Student's Book",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [
+      "א"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "א"
+      }
+    ],
+    "order": 5
+  },
+  {
+    "id": "book-1780930597189",
+    "title": "Bring an independent reading book to every class",
+    "subject": "אנגלית",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ז",
+      "ח",
+      "ט",
+      "י",
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      },
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1780930498560",
+    "title": "Sadlier Vocabulary Workshop - Level B",
+    "subject": "אנגלית",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "הזמנה עצמאית על ידי ההורים דרך WizKids",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1780930440130",
+    "title": "Novel - Out Of My Mind - Sharon M. Draper",
+    "subject": "אנגלית",
+    "author": "Sharon M. Draper",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 3
+  },
+  {
+    "id": "book-1780930350456",
+    "title": "Pearson New Keystone - Level B - Workbook",
+    "subject": "אנגלית",
+    "author": "Pearson",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780930310081",
+    "title": "Pearson New Keystone - Level B - Student's Book",
+    "subject": "אנגלית",
+    "author": "Pearson",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [
+      "דוברי אנגלית"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "אנגלית",
+        "stream": "דוברי אנגלית"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780930257338",
+    "title": "אוגדן פעילויות לכיתה ז'",
+    "subject": "עתודה מדעית טכנולוגית",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "עתודה"
+      }
+    ]
+  },
+  {
+    "id": "book-1780924655727",
+    "title": "גלויות ותגליות – מימי הביניים ועד לעת החדשה",
+    "subject": "היסטוריה",
+    "author": "מכון הר ברכה",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "היסטוריה"
+      }
+    ]
+  },
+  {
+    "id": "book-1780924558896",
+    "title": "סיירת תנ\"ך – חוברת עבודה",
+    "subject": "תנ\"ך",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "חוברת עבודה – מי שלא בתוכנית השאלת הספרים נדרש לרכוש במזומן בימי החלוקה",
+    "grades": [
+      "ז"
+    ],
+    "classes": [
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "classNumber": 4,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "ז",
+        "classNumber": 5,
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "book-1780924518365",
+    "title": "תנ\"ך שלם (לא בהשאלת הספרים)",
+    "subject": "תנ\"ך",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "מומלץ תנ\"ך \"סימנים\"",
+    "grades": [
+      "ז",
+      "ח",
+      "ט",
+      "י",
+      "י\"א",
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "י",
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1780924325560",
+    "title": "חוברת עבודה לספר שופטים",
+    "subject": "תנ\"ך",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "חוברת עבודה – מי שלא בתוכנית השאלת הספרים נדרש לרכוש במזומן בימי החלוקה",
+    "grades": [
+      "ז",
+      "ח"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      6
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "classNumber": 1,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "ז",
+        "classNumber": 2,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "ז",
+        "classNumber": 3,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "ז",
+        "classNumber": 4,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "ז",
+        "classNumber": 5,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "ז",
+        "classNumber": 7,
+        "subjectType": "תנ\"ך"
+      },
+      {
+        "grade": "ח",
+        "classNumber": 6,
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 4
+  },
+  {
+    "id": "book-1780924293878",
+    "title": "חוברת עבודה לספר יהושע",
+    "subject": "תנ\"ך",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "חוברת עבודה – מי שלא בתוכנית השאלת הספרים נדרש לרכוש במזומן בימי החלוקה",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1780924228494",
+    "title": "חוברת עבודה – פניני הלכה – ליקוטים א'",
+    "subject": "הלכה",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "חוברת עבודה – מי שלא בתוכנית השאלת הספרים נדרש לרכוש במזומן בימי החלוקה",
+    "grades": [
+      "ז"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 1
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 2
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 3
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 4
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 5
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 7
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780924207180",
+    "title": "פניני הלכה – ליקוטים א'",
+    "subject": "הלכה",
+    "author": "מכון הר ברכה",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 1
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 2
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 3
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 4
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 5
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 7
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780924178910",
+    "title": "הלכות תפילין – חוברת עבודה \"יגעת ומצאת\" – הרב חיים אפרתי",
+    "subject": "הלכה",
+    "author": "הרב חיים אפרתי",
+    "isMandatory": false,
+    "notes": "רכישה מרוכזת – 20₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ז"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 1
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 2
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 3
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 4
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 5
+      },
+      {
+        "grade": "ז",
+        "subjectType": "הלכה",
+        "classNumber": 7
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1780672919571",
+    "title": "חוברת עבודה – \"עכשיו עברית\" (חמ\"ד) לכיתה ט'",
+    "subject": "לשון",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "החוברת תינתן בתחילת השנה, יש לשלם על הקורס לקבלת החוברת",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "לשון"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780672904673",
+    "title": "קורס מקוון \"עכשיו עברית\" (חמ\"ד) לכיתה ט'",
+    "subject": "לשון",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "תשלום בקישור נפרד – 50₪",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "לשון"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780672897463",
+    "title": "חוברת עבודה – \"עכשיו עברית\" (חמ\"ד) לכיתה ח'",
+    "subject": "לשון",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "החוברת תינתן בתחילת השנה, יש לשלם על הקורס לקבלת החוברת",
+    "grades": [
+      "ח"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "לשון",
+        "classNumber": 1
+      },
+      {
+        "grade": "ח",
+        "subjectType": "לשון",
+        "classNumber": 2
+      },
+      {
+        "grade": "ח",
+        "subjectType": "לשון",
+        "classNumber": 3
+      },
+      {
+        "grade": "ח",
+        "subjectType": "לשון",
+        "classNumber": 4
+      },
+      {
+        "grade": "ח",
+        "subjectType": "לשון",
+        "classNumber": 5
+      },
+      {
+        "grade": "ח",
+        "subjectType": "לשון",
+        "classNumber": 7
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780672890663",
+    "title": "קורס מקוון \"עכשיו עברית\" (חמ\"ד) לכיתה ח'",
+    "subject": "לשון",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "תשלום בקישור נפרד – 60₪",
+    "grades": [
+      "ח"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "לשון",
+        "classNumber": 1
+      },
+      {
+        "grade": "ח",
+        "subjectType": "לשון",
+        "classNumber": 2
+      },
+      {
+        "grade": "ח",
+        "subjectType": "לשון",
+        "classNumber": 3
+      },
+      {
+        "grade": "ח",
+        "subjectType": "לשון",
+        "classNumber": 4
+      },
+      {
+        "grade": "ח",
+        "subjectType": "לשון",
+        "classNumber": 5
+      },
+      {
+        "grade": "ח",
+        "subjectType": "לשון",
+        "classNumber": 7
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780672882221",
+    "title": "חוברת עבודה – \"עכשיו עברית\" לכיתה ז'",
+    "subject": "לשון",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "החוברת תינתן בתחילת השנה, יש לשלם על הקורס לקבלת החוברת",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ז"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "לשון",
+        "classNumber": 1
+      },
+      {
+        "grade": "ז",
+        "subjectType": "לשון",
+        "classNumber": 2
+      },
+      {
+        "grade": "ז",
+        "subjectType": "לשון",
+        "classNumber": 3
+      },
+      {
+        "grade": "ז",
+        "subjectType": "לשון",
+        "classNumber": 4
+      },
+      {
+        "grade": "ז",
+        "subjectType": "לשון",
+        "classNumber": 5
+      },
+      {
+        "grade": "ז",
+        "subjectType": "לשון",
+        "classNumber": 7
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780672847149",
+    "title": "קורס מקוון \"עכשיו עברית\" לכיתה ז'",
+    "subject": "לשון",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "תשלום בקישור נפרד – 60₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ז"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "לשון",
+        "classNumber": 1
+      },
+      {
+        "grade": "ז",
+        "subjectType": "לשון",
+        "classNumber": 2
+      },
+      {
+        "grade": "ז",
+        "subjectType": "לשון",
+        "classNumber": 3
+      },
+      {
+        "grade": "ז",
+        "subjectType": "לשון",
+        "classNumber": 4
+      },
+      {
+        "grade": "ז",
+        "subjectType": "לשון",
+        "classNumber": 5
+      },
+      {
+        "grade": "ז",
+        "subjectType": "לשון",
+        "classNumber": 7
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780672826321",
+    "title": "קורס מקוון \"לשון לתיכון\", תחום העמקה: צורות (30%)",
+    "subject": "לשון",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "תשלום בקישור נפרד – 40₪",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "לשון"
+      }
+    ]
+  },
+  {
+    "id": "book-1780672817673",
+    "title": "קורס מקוון \"לשון לתיכון\", תחום העמקה: צורות (70%)",
+    "subject": "לשון",
+    "author": "מט\"ח",
+    "isMandatory": false,
+    "notes": "תשלום בקישור נפרד – 40₪",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "לשון"
+      }
+    ]
+  },
+  {
+    "id": "book-1780672716265",
+    "title": "תשלום שנתי של 200₪ לעמותת \"נוער שוחר משפט עברי\"",
+    "subject": "משפטים",
+    "author": "נוער שוחר משפט עברי",
+    "isMandatory": false,
+    "notes": "פרטים בנוגע לתשלום יועברו על ידי המורה ורכזי השכבות בקבוצות הווטסאפ",
+    "grades": [
+      "י",
+      "י\"א",
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "משפטים"
+    ],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "משפטים"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "משפטים"
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "משפטים"
+      }
+    ]
+  },
+  {
+    "id": "book-1780672569870",
+    "title": "איילת השחר (חוברת עבודה)",
+    "subject": "מחשבת ישראל",
+    "author": "חוברת פנימית",
+    "isMandatory": false,
+    "notes": "חוברת עבודה – מי שלא בתוכנית השאלת הספרים נדרש לרכוש במזומן בימי החלוקה",
+    "grades": [
+      "י"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "מחשבת ישראל",
+        "classNumber": 1
+      },
+      {
+        "grade": "י",
+        "subjectType": "מחשבת ישראל",
+        "classNumber": 2
+      },
+      {
+        "grade": "י",
+        "subjectType": "מחשבת ישראל",
+        "classNumber": 3
+      },
+      {
+        "grade": "י",
+        "subjectType": "מחשבת ישראל",
+        "classNumber": 4
+      },
+      {
+        "grade": "י",
+        "subjectType": "מחשבת ישראל",
+        "classNumber": 5
+      },
+      {
+        "grade": "י",
+        "subjectType": "מחשבת ישראל",
+        "classNumber": 7
+      }
+    ]
+  },
+  {
+    "id": "book-1780672550969",
+    "title": "מחשבת החכמים",
+    "subject": "מחשבת ישראל",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "ספר לימוד פנימי",
+    "grades": [
+      "ט"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "מחשבת ישראל",
+        "classNumber": 1
+      },
+      {
+        "grade": "ט",
+        "classNumber": 2,
+        "subjectType": "מחשבת ישראל"
+      },
+      {
+        "grade": "ט",
+        "classNumber": 3,
+        "subjectType": "מחשבת ישראל"
+      },
+      {
+        "grade": "ט",
+        "classNumber": 4,
+        "subjectType": "מחשבת ישראל"
+      },
+      {
+        "grade": "ט",
+        "classNumber": 5,
+        "subjectType": "מחשבת ישראל"
+      }
+    ]
+  },
+  {
+    "id": "book-1780672534107",
+    "title": "אמונה וגאולה",
+    "subject": "מחשבת ישראל",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "מדובר במהדורה פנימית שבה פרקים מתוך הספר המקורי",
+    "grades": [
+      "י\"ב",
+      "י\"א"
+    ],
+    "classes": [
+      6
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "מחשבת ישראל"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "מחשבת ישראל",
+        "classNumber": 6
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780672493237",
+    "title": "תורה ומצוות",
+    "subject": "מחשבת ישראל",
+    "author": "משרד החינוך",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "מחשבת ישראל",
+        "classNumber": 1
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "מחשבת ישראל",
+        "classNumber": 2
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "מחשבת ישראל",
+        "classNumber": 3
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "מחשבת ישראל",
+        "classNumber": 4
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "מחשבת ישראל",
+        "classNumber": 5
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780672468150",
+    "title": "הכימיה שבינינו",
+    "subject": "כימיה",
+    "author": "כנרת זמורה דביר",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "כימיה"
+    ],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "כימיה"
+      }
+    ]
+  },
+  {
+    "id": "book-1780671965272",
+    "title": "משברים ותקומה, כרך שלישי: השיבה לציון – עלייה התיישבות ועצמאות",
+    "subject": "היסטוריה",
+    "author": "מכון הר ברכה",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [
+      1,
+      2,
+      5,
+      6
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "היסטוריה",
+        "classNumber": 1
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "היסטוריה",
+        "classNumber": 2
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "היסטוריה",
+        "classNumber": 5
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "היסטוריה",
+        "classNumber": 6
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1780671934646",
+    "title": "משברים ותקומה, כרך ראשון: מסורת ומהפכות",
+    "subject": "היסטוריה",
+    "author": "מכון הר ברכה",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י",
+      "י\"א"
+    ],
+    "classes": [
+      1,
+      4,
+      6,
+      2,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "היסטוריה",
+        "classNumber": 1
+      },
+      {
+        "grade": "י",
+        "subjectType": "היסטוריה",
+        "classNumber": 4
+      },
+      {
+        "grade": "י",
+        "subjectType": "היסטוריה",
+        "classNumber": 6
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "היסטוריה",
+        "classNumber": 1
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "היסטוריה",
+        "classNumber": 2
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "היסטוריה",
+        "classNumber": 5
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "היסטוריה",
+        "classNumber": 6
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780671896251",
+    "title": "משברים ותקומה, כרך שני: חורבן וגבורה – נאציזם ושואה",
+    "subject": "היסטוריה",
+    "author": "מכון הר ברכה",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י",
+      "י\"א"
+    ],
+    "classes": [
+      1,
+      4,
+      6,
+      2,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "היסטוריה",
+        "classNumber": 1
+      },
+      {
+        "grade": "י",
+        "subjectType": "היסטוריה",
+        "classNumber": 4
+      },
+      {
+        "grade": "י",
+        "subjectType": "היסטוריה",
+        "classNumber": 6
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 1,
+        "subjectType": "היסטוריה"
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 2,
+        "subjectType": "היסטוריה"
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 5,
+        "subjectType": "היסטוריה"
+      },
+      {
+        "grade": "י\"א",
+        "classNumber": 6,
+        "subjectType": "היסטוריה"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780671859872",
+    "title": "סולם גנבים – הרב ליאור אנגלמן",
+    "subject": "ספרות",
+    "author": "כנזרת זמורה",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב",
+      "י\"א"
+    ],
+    "classes": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "ספרות",
+        "classNumber": 2
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "ספרות",
+        "classNumber": 3
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "ספרות",
+        "classNumber": 4
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "ספרות",
+        "classNumber": 5
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "ספרות",
+        "classNumber": 2
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "ספרות",
+        "classNumber": 3
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "ספרות",
+        "classNumber": 4
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "ספרות",
+        "classNumber": 5
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780671815820",
+    "title": "אנטיגונה – סופוקלס (מחזה – תרגום של ט' כרמי)",
+    "subject": "ספרות",
+    "author": "הוצאת דביר",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א",
+      "י\"ב"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "ספרות",
+        "classNumber": 1
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "ספרות",
+        "classNumber": 2
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "ספרות",
+        "classNumber": 3
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "ספרות",
+        "classNumber": 4
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "ספרות",
+        "classNumber": 5
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "ספרות",
+        "classNumber": 1
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "ספרות",
+        "classNumber": 2
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "ספרות",
+        "classNumber": 3
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "ספרות",
+        "classNumber": 4
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "ספרות",
+        "classNumber": 5
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780671768706",
+    "title": "תהילה – ש\"י עגנון",
+    "subject": "ספרות",
+    "author": "הוצאת שוקן",
+    "isMandatory": false,
+    "notes": "כל מהדורה של הספר טובה",
+    "grades": [
+      "י"
+    ],
+    "classes": [
+      6
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "ספרות",
+        "classNumber": 6
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780671701838",
+    "title": "The Wave",
+    "subject": "אנגלית",
+    "author": "WizKids",
+    "isMandatory": false,
+    "notes": "כל מהדורה של הספר",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [
+      "5 יח\"ל - מואץ",
+      "5 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל - מואץ"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל"
+      }
+    ],
+    "order": 8
+  },
+  {
+    "id": "book-1780671656802",
+    "title": "New High Five - Student's Book",
+    "subject": "אנגלית",
+    "author": "ECB",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י",
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [
+      "5 יח\"ל - מואץ",
+      "5 יח\"ל"
+    ],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל - מואץ"
+      },
+      {
+        "grade": "י",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "אנגלית",
+        "stream": "5 יח\"ל"
+      }
+    ],
+    "order": 5
+  },
+  {
+    "id": "book-1780671604162",
+    "title": "יסודות מדעי המחשב בשפת Java (משולב עצמים) – חלקים א' (תכלת) + ב'  (סגול)",
+    "subject": "מדעי המחשב",
+    "author": "מבט לחלונות",
+    "isMandatory": false,
+    "notes": "הגרסה הישנה – אם אין אז את החדשה",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "מדעי המחשב"
+    ],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "מדעי המחשב"
+      }
+    ]
+  },
+  {
+    "id": "book-1780671557318",
+    "title": "מודלים חישוביים",
+    "subject": "מדעי המחשב",
+    "author": "מבט לחלונות",
+    "isMandatory": false,
+    "notes": "גרסת 2022 (אם אין אז אחרת)",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "מדעי המחשב"
+    ],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "מדעי המחשב"
+      }
+    ]
+  },
+  {
+    "id": "book-1780671530353",
+    "title": "מבני נתונים בשפת Java",
+    "subject": "מדעי המחשב",
+    "author": "מבט לחלונות",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [
+      "מדעי המחשב"
+    ],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "מדעי המחשב"
+      }
+    ]
+  },
+  {
+    "id": "book-1780671500880",
+    "title": "חוברת עבודה בתנ\"ך לכיתה י\"ב (ירמיהו, יחזקאל, עזרא ונחמיה)",
+    "subject": "תנ\"ך",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "חוברת עבודה – מי שלא בתוכנית השאלת הספרים נדרש לרכוש במזומן בימי החלוקה",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780671486766",
+    "title": "חוברת עבודה בתנ\"ך לכיתה י\"ב (דברים)",
+    "subject": "תנ\"ך",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "חוברת עבודה – מי שלא בתוכנית השאלת הספרים נדרש לרכוש במזומן בימי החלוקה",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780671473942",
+    "title": "חוברת עבודה בתנ\"ך לכיתה י\"א",
+    "subject": "תנ\"ך",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "בראשית, ישעיהו, יונה – חוברת עבודה – מי שלא בתוכנית השאלת הספרים נדרש לרכוש במזומן בימי החלוקה",
+    "grades": [
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780671461627",
+    "title": "חוברת עבודה בתנ\"ך לכיתה י'",
+    "subject": "תנ\"ך",
+    "author": "הוצאה פנימית",
+    "isMandatory": false,
+    "notes": "חוברת עבודה – מי שלא בתוכנית השאלת הספרים נדרש לרכוש במזומן בימי החלוקה",
+    "bookType": "חוברת עבודה",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780671374666",
+    "title": "ארכימדס – כיתה י' – תרגול והכנה למבחנים במתמטיקה – שאלון 571 (מהדורת 2025 – לבן-כחול, עיגול אדום)",
+    "subject": "מתמטיקה",
+    "author": "הוצאת ארכימדס",
+    "isMandatory": false,
+    "notes": "",
+    "bookType": "ספר לימוד / קריאה",
+    "grades": [
+      "י",
+      "ח"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "5 יח\"ל",
+      "האצה"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "5 יח\"ל"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      }
+    ],
+    "order": 12
+  },
+  {
+    "id": "book-1780671341077",
+    "title": "ארכימדס - כיתה י\"א - הכנה לבגרות במתמטיקה - שאלון 571 (מהדורת 2025, ירוק)",
+    "subject": "מתמטיקה",
+    "author": "הוצאת ארכימדס",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"א",
+      "י",
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "5 יח\"ל",
+      "האצה"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"א",
+        "subjectType": "מתמטיקה",
+        "stream": "5 יח\"ל"
+      },
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      }
+    ],
+    "order": 11
+  },
+  {
+    "id": "book-1780671329460",
+    "title": "ארכימדס  - כיתה י\"ב - הכנה לבגרות במתמטיקה - שאלון 572 (מהדורת 2025, כחול-תכלת)",
+    "subject": "מתמטיקה",
+    "author": "הוצאת ארכימדס",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב",
+      "י",
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "5 יח\"ל",
+      "האצה"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "מתמטיקה",
+        "stream": "5 יח\"ל"
+      },
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1780671270946",
+    "title": "בני גורן – מתמטיקה – שאלון 582 – חלק ג'2 (צהוב-סגול)",
+    "subject": "מתמטיקה",
+    "author": "בני גורן",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט",
+      "י",
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "האצה",
+      "5 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "מתמטיקה",
+        "stream": "5 יח\"ל"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780671248881",
+    "title": "בני גורן – מתמטיקה – שאלון 582 – חלק ג'1 (צהוב-תכלת)",
+    "subject": "מתמטיקה",
+    "author": "בני גורן",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט",
+      "י",
+      "י\"ב"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "האצה",
+      "5 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "מתמטיקה",
+        "stream": "5 יח\"ל"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780671208463",
+    "title": "בני גורן – מתמטיקה – שאלון 581 – חלק ב'2 (אדום-סגול)",
+    "subject": "מתמטיקה",
+    "author": "בני גורן",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט",
+      "י",
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "האצה",
+      "5 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "5 יח\"ל"
+      },
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "מתמטיקה",
+        "stream": "5 יח\"ל"
+      }
+    ],
+    "order": 10
+  },
+  {
+    "id": "book-1780671168583",
+    "title": "בני גורן – מתמטיקה – שאלון 581 – חלק ב'1 (אדום-ירוק)",
+    "subject": "מתמטיקה",
+    "author": "בני גורן",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט",
+      "י",
+      "י\"א"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "האצה",
+      "5 יח\"ל"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      },
+      {
+        "grade": "י\"א",
+        "subjectType": "מתמטיקה",
+        "stream": "5 יח\"ל"
+      }
+    ],
+    "order": 9
+  },
+  {
+    "id": "book-1780671110712",
+    "title": "בני גורן – מתמטיקה – שאלונים 481/581 (804/806) – חלק א' (אדום-כתום)",
+    "subject": "מתמטיקה",
+    "author": "בני גורן",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט",
+      "י",
+      "ח"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "א",
+      "5 יח\"ל",
+      "האצה"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "א"
+      },
+      {
+        "grade": "י",
+        "subjectType": "מתמטיקה",
+        "stream": "5 יח\"ל"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      }
+    ],
+    "order": 7
+  },
+  {
+    "id": "book-1780671034002",
+    "title": "מתמטיקה לכיתה ט' – \"אפשר גם אחרת\" (רמות מוגברות, אפור) – חלקים א' + ב'",
+    "subject": "מתמטיקה",
+    "author": "משרד החינוך, הטכניון, האוניברסיטה העברית",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט",
+      "ח"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "א",
+      "א'1",
+      "האצה"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "א"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "א'1"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780670912700",
+    "title": "בני גורן – הנדסה – חלק ב' (תכלת-כתום)",
+    "subject": "מתמטיקה",
+    "author": "בני גורן",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט",
+      "ח"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "א",
+      "א'1",
+      "האצה"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "א"
+      },
+      {
+        "grade": "ט",
+        "subjectType": "מתמטיקה",
+        "stream": "א'1"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780670841853",
+    "title": "מתמטיקה לכיתה ח' - סדרת \"צמרת\" (כחול) – חלקים א' + ב'",
+    "subject": "מתמטיקה",
+    "author": "אתי עוזרי ויצחק שלו",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ח",
+      "ז"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "א",
+      "א'1",
+      "א'2",
+      "האצה"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "מתמטיקה",
+        "stream": "א"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מתמטיקה",
+        "stream": "א'1"
+      },
+      {
+        "grade": "ח",
+        "subjectType": "מתמטיקה",
+        "stream": "א'2"
+      },
+      {
+        "grade": "ז",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780670785317",
+    "title": "מתמטיקה לכיתה ז' - סדרת \"צמרת\" (כתום) – חלקים א' + ב' + ג'",
+    "subject": "מתמטיקה",
+    "author": "אתי עוזרי ויצחק שלו",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [
+      "האצה"
+    ],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "מתמטיקה",
+        "stream": "האצה"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780670691619",
+    "title": "ספר שמואל א'-ב'",
+    "subject": "תנ\"ך",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "ספר עם פירושי רש\"י ומצודות",
+    "grades": [
+      "ח"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "תנ\"ך",
+        "classNumber": 1
+      },
+      {
+        "grade": "ח",
+        "subjectType": "תנ\"ך",
+        "classNumber": 2
+      },
+      {
+        "grade": "ח",
+        "subjectType": "תנ\"ך",
+        "classNumber": 3
+      },
+      {
+        "grade": "ח",
+        "subjectType": "תנ\"ך",
+        "classNumber": 4
+      },
+      {
+        "grade": "ח",
+        "subjectType": "תנ\"ך",
+        "classNumber": 5
+      },
+      {
+        "grade": "ח",
+        "subjectType": "תנ\"ך",
+        "classNumber": 7
+      }
+    ],
+    "order": 2
+  },
+  {
+    "id": "book-1780670679517",
+    "title": "ספר יהושע - שופטים",
+    "subject": "תנ\"ך",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "ספר כולל פירושי רש\"י ומצודות",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780670668427",
+    "title": "חומש במדבר",
+    "subject": "תנ\"ך",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "חומש עם פירוש רש\"י",
+    "grades": [
+      "י"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780670622111",
+    "title": "חומש ויקרא",
+    "subject": "תנ\"ך",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "חומש עם פירוש רש\"י",
+    "grades": [
+      "ט"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780670612821",
+    "title": "חומש שמות",
+    "subject": "תנ\"ך",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "חומש עם פירוש רש\"י",
+    "grades": [
+      "ח"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ח",
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780670604283",
+    "title": "חומש בראשית",
+    "subject": "תנ\"ך",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "חומש עם פירוש רש\"י",
+    "grades": [
+      "ז"
+    ],
+    "classes": [],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "תנ\"ך"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780670463311",
+    "title": "\"והאר עינינו\" - אסופת סוגיות עיון בגמרא - מסכת בבא מציעא",
+    "subject": "גמרא",
+    "author": "מכון משפטי ארץ",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "גמרא",
+        "classNumber": 2
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "גמרא",
+        "classNumber": 3
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "גמרא",
+        "classNumber": 4
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "גמרא",
+        "classNumber": 5
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780670430923",
+    "title": "גמרא - מסכת בבא מציעא",
+    "subject": "גמרא",
+    "author": "כללי",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י\"ב"
+    ],
+    "classes": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י\"ב",
+        "subjectType": "גמרא",
+        "classNumber": 2
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "גמרא",
+        "classNumber": 3
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "גמרא",
+        "classNumber": 4
+      },
+      {
+        "grade": "י\"ב",
+        "subjectType": "גמרא",
+        "classNumber": 5
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780670368853",
+    "title": "מסכת קידושין – חוברת לימוד  – אור לגמרא",
+    "subject": "גמרא",
+    "author": "אור לגמרא",
+    "isMandatory": false,
+    "notes": "יש לשלם ברכישה מרוכזת על הספר והחוברת (ביחד) – 60₪",
+    "bookType": "לא בהשאלת הספרים",
+    "grades": [
+      "ז",
+      "ח"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ז",
+        "subjectType": "גמרא",
+        "classNumber": 1
+      },
+      {
+        "grade": "ז",
+        "classNumber": 2,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ז",
+        "classNumber": 3,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ז",
+        "classNumber": 4,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ז",
+        "classNumber": 5,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ז",
+        "classNumber": 7,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ח",
+        "classNumber": 1,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ח",
+        "classNumber": 2,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ח",
+        "classNumber": 3,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ח",
+        "classNumber": 4,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ח",
+        "classNumber": 5,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "ח",
+        "classNumber": 7,
+        "subjectType": "גמרא"
+      }
+    ],
+    "order": 1
+  },
+  {
+    "id": "book-1780670336771",
+    "title": "מסכת קידושין - עם פירוש שטיינזלץ",
+    "subject": "גמרא",
+    "author": "מרכז שטיינזלץ - קורן",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "י"
+    ],
+    "classes": [
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "י",
+        "subjectType": "גמרא",
+        "classNumber": 2
+      },
+      {
+        "grade": "י",
+        "classNumber": 3,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "י",
+        "classNumber": 4,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "י",
+        "classNumber": 5,
+        "subjectType": "גמרא"
+      },
+      {
+        "grade": "י",
+        "classNumber": 7,
+        "subjectType": "גמרא"
+      }
+    ],
+    "order": 0
+  },
+  {
+    "id": "book-1780670322970",
+    "title": "מסכת ברכות - עם פירוש שטיינזלץ",
+    "subject": "גמרא",
+    "author": "מרכז שטיינזלץ - קורן",
+    "isMandatory": false,
+    "notes": "",
+    "grades": [
+      "ט"
+    ],
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "english": [],
+    "math": [],
+    "majors": [],
+    "associations": [
+      {
+        "grade": "ט",
+        "subjectType": "גמרא",
+        "classNumber": 1
+      },
+      {
+        "grade": "ט",
+        "subjectType": "גמרא",
+        "classNumber": 2
+      },
+      {
+        "grade": "ט",
+        "subjectType": "גמרא",
+        "classNumber": 3
+      },
+      {
+        "grade": "ט",
+        "subjectType": "גמרא",
+        "classNumber": 4
+      },
+      {
+        "grade": "ט",
+        "subjectType": "גמרא",
+        "classNumber": 5
+      }
+    ],
+    "order": 0
   }
 ]
