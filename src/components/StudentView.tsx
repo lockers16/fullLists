@@ -373,23 +373,7 @@ export function StudentView({ books }: StudentViewProps) {
       return hasGradeAssoc || hasLegacyGrade;
     });
 
-    // Create the English dictionary virtual book required for all levels
-    const englishDictionaryBook: Book = {
-      id: 'english_dict',
-      title: 'מילון אנגלי-עברי עברי-אנגלי (אוקספורד/מורפיקס) או מילונית אלקטרונית מאושרת',
-      subject: 'אנגלית',
-      author: 'הוצאות שונות / דגמים מאושרים ע"י משרד החינוך',
-      isMandatory: true,
-      grades: ['ז', 'ח', 'ט', 'י', 'י"א', 'י"ב'],
-      classes: [],
-      english: [],
-      math: [],
-      majors: [],
-      bookType: 'ספר לימוד / קריאה',
-      notes: 'נדרש לכלל התלמידים בכל ההקבצות והרמות לשימוש שוטף ובבחינות הבגרות'
-    };
-
-    const gradeBooks = [...gradeBooksFiltered, englishDictionaryBook];
+    const gradeBooks = gradeBooksFiltered;
 
     // Determine the list of active classes for this mode
     const classesToCheck = classMode === '6' ? [6] : getActiveOtherClasses(selectedGrade);
@@ -403,9 +387,7 @@ export function StudentView({ books }: StudentViewProps) {
       if (['מתמטיקה', 'אנגלית'].includes(subjectName)) {
         // Mathematics and English - show books grouped by stream
         subjectBooks.forEach(book => {
-          const isDictionary = book.id === 'english_dict' || 
-                               book.title === 'מילון אנגלי-עברי עברי-אנגלי (אוקספורד/מורפיקס) או מילונית אלקטרונית מאושרת' ||
-                               book.title === 'מילון עברי/אנגלי-אנגלי/עברי או מילונית אלקטרונית מאושרת';
+          const isDictionary = book.title === 'מילון עברי/אנגלי-אנגלי/עברי או מילונית אלקטרונית מאושרת';
 
           if (isDictionary) {
             // Virtual dictionary / any dictionary applies to all classes in this mode as general English
@@ -571,9 +553,11 @@ export function StudentView({ books }: StudentViewProps) {
       // If they are under the same subject, check if it's Math/English to sort descendingly by stream
       const baseA = getBaseSubject(a.displaySubject);
       if (baseA === 'אנגלית') {
-        if (a.book.id === 'english_dict' && b.book.id === 'english_dict') return 0;
-        if (a.book.id === 'english_dict') return -1;
-        if (b.book.id === 'english_dict') return 1;
+        const isDictA = a.book.title === 'מילון עברי/אנגלי-אנגלי/עברי או מילונית אלקטרונית מאושרת';
+        const isDictB = b.book.title === 'מילון עברי/אנגלי-אנגלי/עברי או מילונית אלקטרונית מאושרת';
+        if (isDictA && isDictB) return 0;
+        if (isDictA) return -1;
+        if (isDictB) return 1;
         
         // Extract streams from display subject to sort them correctly
         const streamA = getStreamFromDisplaySubject(a.displaySubject);
