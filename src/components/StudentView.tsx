@@ -16,11 +16,11 @@ interface DisplayItem {
   uniqueId: string;       // Unique ID for React key and deletion
   book: Book;             // Original book reference
   displaySubject: string; // The formatted subject header (e.g. "היסטוריה (י'5)")
-  section: 'regular' | 'math_english' | 'majors'; // Section grouping
+  section: 'regular' | 'math' | 'english' | 'majors'; // Section grouping
 }
 
-// Order of regular subjects
-const REGULAR_SUBJECTS_ORDER = [
+// All subjects listed in the requested display order
+const ALL_SUBJECTS_ORDER = [
   'גמרא',
   'תושב"ע',
   'משנה',
@@ -34,8 +34,63 @@ const REGULAR_SUBJECTS_ORDER = [
   'היסטוריה',
   'מדעים',
   'עתודה',
-  'מגמות' // For Grade ט, 'מגמות' is listed as a regular subject
+  'מתמטיקה',
+  'אנגלית',
+  'מגמות',
+  'מדעי המחשב',
+  'פיזיקה',
+  'ביולוגיה',
+  'ניהול עסקי',
+  'משפטים',
+  'מוזיקה',
+  'תקשורת',
+  'ערבית',
+  'אלקטרוניקה',
+  'כימיה'
 ];
+
+// Legacy subjects order fallback
+const REGULAR_SUBJECTS_ORDER = ALL_SUBJECTS_ORDER;
+
+// Helper to get base subject name (e.g. "אנגלית (5 יח"ל)" -> "אנגלית")
+function getBaseSubject(displaySubject: string): string {
+  const idx = displaySubject.indexOf('(');
+  if (idx !== -1) {
+    return displaySubject.substring(0, idx).trim();
+  }
+  return displaySubject.trim();
+}
+
+// Helper to get stream name from display subject (e.g. "אנגלית (5 יח"ל)" -> "5 יח"ל")
+function getStreamFromDisplaySubject(displaySubject: string): string {
+  const start = displaySubject.indexOf('(');
+  const end = displaySubject.indexOf(')');
+  if (start !== -1 && end !== -1 && end > start) {
+    return displaySubject.substring(start + 1, end).trim();
+  }
+  return '';
+}
+
+// Helper to get book streams for a grade
+function getBookStreamsForGrade(book: Book, grade: GradeLevel, subject: 'מתמטיקה' | 'אנגלית'): string[] {
+  const streams = new Set<string>();
+  if (book.associations && book.associations.length > 0) {
+    book.associations.forEach(assoc => {
+      if (assoc.grade === grade && assoc.subjectType === subject && assoc.stream) {
+        streams.add(assoc.stream);
+      }
+    });
+  }
+  // Fallback to legacy fields
+  if (streams.size === 0) {
+    if (subject === 'אנגלית' && book.english && book.english.length > 0) {
+      book.english.forEach(s => streams.add(s));
+    } else if (subject === 'מתמטיקה' && book.math && book.math.length > 0) {
+      book.math.forEach(s => streams.add(s));
+    }
+  }
+  return Array.from(streams);
+}
 
 // Order of English streams (descending)
 const ENGLISH_STREAMS_ORDER = [
@@ -147,19 +202,9 @@ function formatClassListForSuffix(grade: string, classes: number[]): string {
 
 // Get the display order rank for subject headers
 function getSubjectSortIndex(subjectKey: string): number {
-  // Extract clean subject name by removing parentheses/class qualifiers
-  const cleanSubject = subjectKey.split(' ')[0];
-  
-  if (cleanSubject === 'מתמטיקה') return 100;
-  if (cleanSubject === 'אנגלית') return 101;
-  
-  const majorIndex = MAJOR_SUBJECTS.indexOf(cleanSubject);
-  if (majorIndex !== -1) {
-    return 200 + majorIndex;
-  }
-  
-  const regularIndex = REGULAR_SUBJECTS_ORDER.indexOf(cleanSubject);
-  return regularIndex !== -1 ? regularIndex : 500;
+  const cleanSubject = getBaseSubject(subjectKey);
+  const idx = ALL_SUBJECTS_ORDER.indexOf(cleanSubject);
+  return idx !== -1 ? idx : 999;
 }
 
 // Get stream sorting index for English books
@@ -239,6 +284,16 @@ export function StudentView({ books }: StudentViewProps) {
   // Helper to determine if a book applies to a specific class in a grade
   const bookAppliesToClass = (book: Book, grade: GradeLevel, classNum: number): boolean => {
     let targetClass = classNum;
+    
+    const isTanachInZaynOrChet = (['ז', 'ח'].includes(grade) && book.subject === 'תנ"ך');
+    
+    // Check grade match first
+    const hasGradeMatch = (book.associations && book.associations.some(assoc => assoc.grade === grade)) ||
+                           (book.grades && book.grades.includes(grade));
+                           
+    if (isTanachInZaynOrChet && hasGradeMatch) {
+      return true;
+    }
     
     // Rule for Grade י"ב: Classes 2 to 5 get identical books to classes 3 and 5.
     // This rule is only applied to Gemara (גמרא) books.
@@ -326,122 +381,169 @@ export function StudentView({ books }: StudentViewProps) {
 
     const gradeBooks = [...gradeBooksFiltered, englishDictionaryBook];
 
-    if (classMode === '6') {
-      // CLASS 6 ONLY MODE
-      gradeBooks.forEach(book => {
-        // Verify if book applies to Class 6
-        const applies = bookAppliesToClass(book, selectedGrade, 6);
-        if (!applies) return;
+    // Determine the list of active classes for this mode
+    const classesToCheck = classMode === '6' ? [6] : getActiveOtherClasses(selectedGrade);
 
-        let section: 'regular' | 'math_english' | 'majors' = 'regular';
-        let displaySubject = book.subject;
+    // Group subjects by their nature
+    const subjectsInGrade = Array.from(new Set(gradeBooks.map(b => b.subject)));
 
-        if (['מתמטיקה', 'אנגלית'].includes(book.subject)) {
-          section = 'math_english';
-        } else if (MAJOR_SUBJECTS.includes(book.subject) && ['י', 'י"א', 'י"ב'].includes(selectedGrade)) {
-          section = 'majors';
-        }
+    subjectsInGrade.forEach(subjectName => {
+      const subjectBooks = gradeBooks.filter(b => b.subject === subjectName);
 
-        items.push({
-          uniqueId: `${book.id}_6_${displaySubject}`,
-          book,
-          displaySubject,
-          section
-        });
-      });
-    } else {
-      // ALL OTHER CLASSES MODE (Classes 1-5, and 7 if applicable)
-      const otherClassesList = getActiveOtherClasses(selectedGrade);
-
-      // Group subjects by their nature
-      const subjectsInGrade = Array.from(new Set(gradeBooks.map(b => b.subject)));
-
-      subjectsInGrade.forEach(subjectName => {
-        const subjectBooks = gradeBooks.filter(b => b.subject === subjectName);
-
-        if (['מתמטיקה', 'אנגלית'].includes(subjectName)) {
-          // Mathematics and English - show all groups in descending order, no splitting
-          subjectBooks.forEach(book => {
-            // Must apply to at least one other class
-            const appliesToAny = otherClassesList.some(c => bookAppliesToClass(book, selectedGrade, c));
-            if (!appliesToAny) return;
+      if (['מתמטיקה', 'אנגלית'].includes(subjectName)) {
+        // Mathematics and English - show books grouped by stream
+        subjectBooks.forEach(book => {
+          if (book.id === 'english_dict') {
+            // Virtual dictionary applies to all classes in this mode
+            const applies = classesToCheck.some(c => bookAppliesToClass(book, selectedGrade, c));
+            if (!applies) return;
 
             items.push({
-              uniqueId: `${book.id}_other_${subjectName}`,
+              uniqueId: `${book.id}_${classMode}`,
               book,
-              displaySubject: subjectName,
-              section: 'math_english'
+              displaySubject: 'אנגלית',
+              section: 'english'
             });
-          });
-        } else if (MAJOR_SUBJECTS.includes(subjectName) && ['י', 'י"א', 'י"ב'].includes(selectedGrade)) {
-          // Major subjects - show all available books, no splitting
-          subjectBooks.forEach(book => {
-            const appliesToAny = otherClassesList.some(c => bookAppliesToClass(book, selectedGrade, c));
-            if (!appliesToAny) return;
+          } else {
+            const isMathInJuniorGrades = ['ז', 'ח', 'ט'].includes(selectedGrade) && subjectName === 'מתמטיקה';
 
-            items.push({
-              uniqueId: `${book.id}_other_${subjectName}`,
-              book,
-              displaySubject: subjectName,
-              section: 'majors'
-            });
-          });
-        } else {
-          // Regular subjects: גמרא, תנ"ך, היסטוריה etc. (And 'מגמות' in Grade ט)
-          // Group classes by the set of books they require for this subject
-          const classGroups: { classes: number[]; books: Book[] }[] = [];
+            if (isMathInJuniorGrades) {
+              const bookStreams = getBookStreamsForGrade(book, selectedGrade, 'מתמטיקה');
+              const hasSpecialEdStream = bookStreams.includes('כיתת חינוך מיוחד / תקשורת');
 
-          otherClassesList.forEach(c => {
-            const booksForClass = subjectBooks.filter(book => bookAppliesToClass(book, selectedGrade, c));
-            if (booksForClass.length === 0) return;
+              if (classMode === '6') {
+                if (!hasSpecialEdStream) return;
+                
+                // Only show under "מתמטיקה" header, without the stream name
+                items.push({
+                  uniqueId: `${book.id}_${classMode}_מתמטיקה`,
+                  book,
+                  displaySubject: 'מתמטיקה',
+                  section: 'math'
+                });
+              } else {
+                // classMode === 'other'
+                // Exclude any books with this stream completely
+                if (hasSpecialEdStream) return;
 
-            // Check if there is an existing group with the exact same books
-            const existingGroup = classGroups.find(group => {
-              if (group.books.length !== booksForClass.length) return false;
-              const groupBookIds = group.books.map(b => b.id).sort();
-              const classBookIds = booksForClass.map(b => b.id).sort();
-              return groupBookIds.every((id, idx) => id === classBookIds[idx]);
-            });
+                // Rest of math books in junior grades are mapped to their streams normally
+                if (bookStreams.length > 0) {
+                  bookStreams.forEach(stream => {
+                    const applies = classesToCheck.some(c => bookAppliesToClass(book, selectedGrade, c));
+                    if (!applies) return;
 
-            if (existingGroup) {
-              existingGroup.classes.push(c);
+                    const displaySubject = `${subjectName} (${stream})`;
+                    items.push({
+                      uniqueId: `${book.id}_${classMode}_${stream}_${displaySubject}`,
+                      book,
+                      displaySubject,
+                      section: 'math'
+                    });
+                  });
+                } else {
+                  const applies = classesToCheck.some(c => bookAppliesToClass(book, selectedGrade, c));
+                  if (!applies) return;
+
+                  items.push({
+                    uniqueId: `${book.id}_${classMode}_${subjectName}`,
+                    book,
+                    displaySubject: subjectName,
+                    section: 'math'
+                  });
+                }
+              }
             } else {
-              classGroups.push({ classes: [c], books: booksForClass });
+              const bookStreams = getBookStreamsForGrade(book, selectedGrade, subjectName as 'מתמטיקה' | 'אנגלית');
+              if (bookStreams.length > 0) {
+                bookStreams.forEach(stream => {
+                  const applies = classesToCheck.some(c => bookAppliesToClass(book, selectedGrade, c));
+                  if (!applies) return;
+
+                  const displaySubject = `${subjectName} (${stream})`;
+                  items.push({
+                    uniqueId: `${book.id}_${classMode}_${stream}_${displaySubject}`,
+                    book,
+                    displaySubject,
+                    section: subjectName === 'מתמטיקה' ? 'math' : 'english'
+                  });
+                });
+              } else {
+                // No streams defined, show as base subject
+                const applies = classesToCheck.some(c => bookAppliesToClass(book, selectedGrade, c));
+                if (!applies) return;
+
+                items.push({
+                  uniqueId: `${book.id}_${classMode}_${subjectName}`,
+                  book,
+                  displaySubject: subjectName,
+                  section: subjectName === 'מתמטיקה' ? 'math' : 'english'
+                });
+              }
             }
+          }
+        });
+      } else if (MAJOR_SUBJECTS.includes(subjectName) && ['י', 'י"א', 'י"ב'].includes(selectedGrade)) {
+        // Major subjects - show all available books grouped by subject, no class suffixes needed as majors are elective
+        subjectBooks.forEach(book => {
+          const applies = classesToCheck.some(c => bookAppliesToClass(book, selectedGrade, c));
+          if (!applies) return;
+
+          items.push({
+            uniqueId: `${book.id}_${classMode}_${subjectName}`,
+            book,
+            displaySubject: subjectName,
+            section: 'majors'
+          });
+        });
+      } else {
+        // Regular subjects: גמרא, תנ"ך, היסטוריה etc.
+        // Group classes by the set of books they require for this subject
+        const classGroups: { classes: number[]; books: Book[] }[] = [];
+
+        classesToCheck.forEach(c => {
+          const booksForClass = subjectBooks.filter(book => bookAppliesToClass(book, selectedGrade, c));
+          if (booksForClass.length === 0) return;
+
+          // Check if there is an existing group with the exact same books
+          const existingGroup = classGroups.find(group => {
+            if (group.books.length !== booksForClass.length) return false;
+            const groupBookIds = group.books.map(b => b.id).sort();
+            const classBookIds = booksForClass.map(b => b.id).sort();
+            return groupBookIds.every((id, idx) => id === classBookIds[idx]);
           });
 
-          // Create display items for each class group
-          classGroups.forEach(group => {
-            const isAllOtherClasses = group.classes.length === otherClassesList.length;
-            
-            // Format the subject header. If it's for all classes in this view, no class suffix.
-            // Otherwise, append the Hebrew class suffix, e.g., "(י'1 – י'4)" or "(י'5)".
-            const displaySubject = isAllOtherClasses 
-              ? subjectName 
-              : `${subjectName} (${formatClassListForSuffix(selectedGrade, group.classes)})`;
+          if (existingGroup) {
+            existingGroup.classes.push(c);
+          } else {
+            classGroups.push({ classes: [c], books: booksForClass });
+          }
+        });
 
-            group.books.forEach(book => {
-              items.push({
-                uniqueId: `${book.id}_group_${group.classes.join('-')}_${displaySubject}`,
-                book,
-                displaySubject,
-                section: 'regular'
-              });
+        // Create display items for each class group
+        classGroups.forEach(group => {
+          const isAllOtherClasses = group.classes.length === classesToCheck.length;
+          
+          // Format the subject header. If it's for all classes in this view, no class suffix.
+          // Otherwise, append the Hebrew class suffix, e.g., "(י'1 – י'4)" or "(י'5)".
+          const displaySubject = isAllOtherClasses 
+            ? subjectName 
+            : `${subjectName} (${formatClassListForSuffix(selectedGrade, group.classes)})`;
+
+          group.books.forEach(book => {
+            items.push({
+              uniqueId: `${book.id}_group_${group.classes.join('-')}_${displaySubject}`,
+              book,
+              displaySubject,
+              section: 'regular'
             });
           });
-        }
-      });
-    }
+        });
+      }
+    });
 
     // Sort display items so English & Math books are ordered by stream descendingly
     const sortedItems = items.sort((a, b) => {
-      // First, sort by section
-      if (a.section !== b.section) {
-        const order = { regular: 1, math_english: 2, majors: 3 };
-        return order[a.section] - order[b.section];
-      }
-
-      // Next, sort by subject header order
+      // First, sort by subject header order
       const subAIndex = getSubjectSortIndex(a.displaySubject);
       const subBIndex = getSubjectSortIndex(b.displaySubject);
       if (subAIndex !== subBIndex) {
@@ -449,19 +551,30 @@ export function StudentView({ books }: StudentViewProps) {
       }
 
       // If they are under the same subject, check if it's Math/English to sort descendingly by stream
-      if (a.book.subject === 'אנגלית') {
+      const baseA = getBaseSubject(a.displaySubject);
+      if (baseA === 'אנגלית') {
         if (a.book.id === 'english_dict' && b.book.id === 'english_dict') return 0;
         if (a.book.id === 'english_dict') return -1;
         if (b.book.id === 'english_dict') return 1;
-        const strA = getEnglishSortIndex(a.book);
-        const strB = getEnglishSortIndex(b.book);
-        if (strA !== strB) return strA - strB;
+        
+        // Extract streams from display subject to sort them correctly
+        const streamA = getStreamFromDisplaySubject(a.displaySubject);
+        const streamB = getStreamFromDisplaySubject(b.displaySubject);
+        const idxA = ENGLISH_STREAMS_ORDER.indexOf(streamA);
+        const idxB = ENGLISH_STREAMS_ORDER.indexOf(streamB);
+        const valA = idxA !== -1 ? idxA : 999;
+        const valB = idxB !== -1 ? idxB : 999;
+        if (valA !== valB) return valA - valB;
       }
 
-      if (a.book.subject === 'מתמטיקה') {
-        const strA = getMathSortIndex(a.book);
-        const strB = getMathSortIndex(b.book);
-        if (strA !== strB) return strA - strB;
+      if (baseA === 'מתמטיקה') {
+        const streamA = getStreamFromDisplaySubject(a.displaySubject);
+        const streamB = getStreamFromDisplaySubject(b.displaySubject);
+        const idxA = MATH_STREAMS_ORDER.indexOf(streamA);
+        const idxB = MATH_STREAMS_ORDER.indexOf(streamB);
+        const valA = idxA !== -1 ? idxA : 999;
+        const valB = idxB !== -1 ? idxB : 999;
+        if (valA !== valB) return valA - valB;
       }
 
       // Fallback internal order or alphabetical
@@ -521,7 +634,7 @@ export function StudentView({ books }: StudentViewProps) {
     const headerTitle = getGeneratedTitle();
     
     // Group display items by their displaySubject
-    const grouped: Record<string, { section: string; items: DisplayItem[] }> = {};
+    const grouped: Record<string, { section: 'regular' | 'math' | 'english' | 'majors'; items: DisplayItem[] }> = {};
     displayedItems.forEach(item => {
       if (!grouped[item.displaySubject]) {
         grouped[item.displaySubject] = { section: item.section, items: [] };
@@ -532,44 +645,61 @@ export function StudentView({ books }: StudentViewProps) {
     // We sort the subjects
     const sortedSubjects = Object.keys(grouped).sort((a, b) => getSubjectSortIndex(a) - getSubjectSortIndex(b));
 
-    const showMathEnglishHeading = displayedItems.some(item => item.section === 'math_english');
-    const showMajorsHeading = displayedItems.some(item => item.section === 'majors');
-
     let tableBodyHtml = '';
-    let currentSection: 'regular' | 'math_english' | 'majors' | null = null;
+    let currentSection: 'regular' | 'math' | 'english' | 'majors' | null = null;
 
     sortedSubjects.forEach(subjectHeader => {
       const { section, items } = grouped[subjectHeader];
 
       // Add major section headers in print output
-      if (section === 'math_english' && currentSection !== 'math_english') {
-        currentSection = 'math_english';
+      if (section === 'math' && currentSection !== 'math') {
+        currentSection = 'math';
         tableBodyHtml += `
-          <tr style="background-color: #1e3a8a; color: white; -webkit-print-color-adjust: exact; print-color-adjust: exact;">
-            <td colspan="2" style="padding: 16px; border: 1px solid #cbd5e1; text-align: right; font-size: 17px; font-weight: 800; font-family: 'Assistant', sans-serif;">
-              מתמטיקה ואנגלית
+          <tr class="category-header-row" style="background-color: #1e3a8a; color: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; page-break-after: avoid; break-after: avoid;">
+            <td colspan="3" style="padding: 16px; border: 1px solid #cbd5e1; text-align: right; font-size: 17px; font-weight: 800; font-family: 'Assistant', sans-serif;">
+              מתמטיקה
+            </td>
+          </tr>
+        `;
+      } else if (section === 'english' && currentSection !== 'english') {
+        currentSection = 'english';
+        tableBodyHtml += `
+          <tr class="category-header-row" style="background-color: #1e3a8a; color: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; page-break-after: avoid; break-after: avoid;">
+            <td colspan="3" style="padding: 16px; border: 1px solid #cbd5e1; text-align: right; font-size: 17px; font-weight: 800; font-family: 'Assistant', sans-serif;">
+              אנגלית
             </td>
           </tr>
         `;
       } else if (section === 'majors' && currentSection !== 'majors') {
         currentSection = 'majors';
         tableBodyHtml += `
-          <tr style="background-color: #1e3a8a; color: white; -webkit-print-color-adjust: exact; print-color-adjust: exact;">
-            <td colspan="2" style="padding: 16px; border: 1px solid #cbd5e1; text-align: right; font-size: 17px; font-weight: 800; font-family: 'Assistant', sans-serif;">
-              מגמות
+          <tr class="category-header-row" style="background-color: #4f46e5; color: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; page-break-after: avoid; break-after: avoid;">
+            <td colspan="3" style="padding: 16px; border: 1px solid #cbd5e1; text-align: right; font-size: 17px; font-weight: 800; font-family: 'Assistant', sans-serif;">
+              מגמות לימוד
             </td>
           </tr>
         `;
       }
 
-      // Print subject row
-      tableBodyHtml += `
-        <tr style="background-color: #eff6ff; font-weight: bold; -webkit-print-color-adjust: exact; print-color-adjust: exact;">
-          <td colspan="2" style="padding: 12px; border: 1px solid #cbd5e1; text-align: right; direction: rtl; font-size: 14px; font-weight: bold; color: #1e40af; font-family: 'Assistant', sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact;">
-            ${subjectHeader}
-          </td>
-        </tr>
-      `;
+      // Print subject row / stream row
+      if (subjectHeader === 'אנגלית') {
+        const label = selectedGrade === 'י"ב' ? 'נדרש לכולם (פרט למסיימים)' : 'נדרש לכולם';
+        tableBodyHtml += `
+          <tr class="subject-header-row" style="background-color: #eff6ff; font-weight: bold; -webkit-print-color-adjust: exact; print-color-adjust: exact; page-break-after: avoid; break-after: avoid;">
+            <td colspan="3" style="padding: 12px; border: 1px solid #cbd5e1; text-align: right; direction: rtl; font-size: 14px; font-weight: bold; color: #1e40af; font-family: 'Assistant', sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; background-image: linear-gradient(to right, #eff6ff, #dbeafe);">
+              ${label}
+            </td>
+          </tr>
+        `;
+      } else {
+        tableBodyHtml += `
+          <tr class="subject-header-row" style="background-color: #eff6ff; font-weight: bold; -webkit-print-color-adjust: exact; print-color-adjust: exact; page-break-after: avoid; break-after: avoid;">
+            <td colspan="3" style="padding: 12px; border: 1px solid #cbd5e1; text-align: right; direction: rtl; font-size: 14px; font-weight: bold; color: #1e40af; font-family: 'Assistant', sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact;">
+              ${subjectHeader}
+            </td>
+          </tr>
+        `;
+      }
 
       items.forEach((item, idx) => {
         const book = item.book;
@@ -581,27 +711,18 @@ export function StudentView({ books }: StudentViewProps) {
           typeStyle = 'color: #991b1b; font-weight: bold; background-color: #fef2f2;';
         }
 
-        const notesHtml = book.notes ? `<div style="font-size: 11px; color: #475569; font-weight: normal; margin-top: 4px; direction: rtl;"><strong>הערה:</strong> ${book.notes}</div>` : '';
-
-        // Add "נדרש לכולם" header row above the English dictionary book in printable output
-        if (book.id === 'english_dict') {
-          tableBodyHtml += `
-            <tr style="background-color: #eff6ff; font-weight: bold; -webkit-print-color-adjust: exact; print-color-adjust: exact;">
-              <td colspan="2" style="padding: 10px 12px; border: 1px solid #cbd5e1; text-align: right; direction: rtl; font-size: 13px; font-weight: bold; color: #1e40af; font-family: 'Assistant', sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; background-image: linear-gradient(to right, #eff6ff, #dbeafe);">
-                נדרש לכולם
-              </td>
-            </tr>
-          `;
-        }
-
         tableBodyHtml += `
           <tr style="background-color: ${idx % 2 === 0 ? '#ffffff' : '#f8fafc'}; -webkit-print-color-adjust: exact; print-color-adjust: exact;">
-            <td style="padding: 12px; border: 1px solid #cbd5e1; text-align: right; direction: rtl; font-family: 'Assistant', sans-serif; font-size: 13px;">
+            <td style="padding: 12px; border: 1px solid #cbd5e1; text-align: right; direction: rtl; font-family: 'Assistant', sans-serif; font-size: 13px; width: 48%;">
               <div style="font-weight: bold; color: #0f172a;">${book.title}</div>
               <div style="font-size: 11px; color: #64748b; margin-top: 2px;">מחבר / הוצאה: ${book.author || '-'}</div>
-              ${notesHtml}
             </td>
-            <td style="padding: 12px; border: 1px solid #cbd5e1; text-align: center; font-family: 'Assistant', sans-serif; font-size: 12px; ${typeStyle}">${bType}</td>
+            <td style="padding: 12px; border: 1px solid #cbd5e1; text-align: center; font-family: 'Assistant', sans-serif; font-size: 12px; ${typeStyle} width: 22%;">
+              ${bType}
+            </td>
+            <td style="padding: 12px; border: 1px solid #cbd5e1; text-align: right; direction: rtl; font-family: 'Assistant', sans-serif; font-size: 12px; color: #334155; width: 30%;">
+              ${book.notes || '-'}
+            </td>
           </tr>
         `;
       });
@@ -620,6 +741,9 @@ export function StudentView({ books }: StudentViewProps) {
           table { width: 100%; border-collapse: collapse; margin-top: 20px; }
           th { background-color: #1d4ed8; color: white; padding: 14px; font-weight: bold; border: 1px solid #cbd5e1; text-align: center; font-family: 'Assistant', sans-serif; font-size: 14px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
           td { border: 1px solid #cbd5e1; padding: 12px; }
+          tr { page-break-inside: avoid; break-inside: avoid; }
+          tr.category-header-row { page-break-after: avoid !important; break-after: avoid !important; }
+          tr.subject-header-row { page-break-after: avoid !important; break-after: avoid !important; }
           @media print {
             body { padding: 0; }
           }
@@ -630,11 +754,20 @@ export function StudentView({ books }: StudentViewProps) {
           <h1 style="margin: 0; font-size: 26px; font-weight: 800; font-family: 'Assistant', sans-serif; letter-spacing: -0.5px;">${headerTitle}</h1>
           <p style="margin: 6px 0 0 0; font-size: 14px; opacity: 0.9; font-family: 'Assistant', sans-serif; font-weight: 500;">ישיבת בני עקיבא לפיד מודיעין - שנת הלימודים תשפ"ז (2026-2027)</p>
         </div>
+        ${classMode === 'other' && selectedGrade && GRADE_CLASS_NOTICES[selectedGrade] ? `
+        <div style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 15px 20px; margin-bottom: 25px; text-align: right; direction: rtl; -webkit-print-color-adjust: exact; print-color-adjust: exact;">
+          <p style="margin: 0; font-size: 13px; color: #1e3a8a; font-family: 'Assistant', sans-serif; line-height: 1.5;">
+            <strong style="font-weight: 800; color: #172554;">שימו לב לסוגי הכיתות: </strong>
+            ${GRADE_CLASS_NOTICES[selectedGrade]}
+          </p>
+        </div>
+        ` : ''}
         <table>
           <thead>
             <tr>
-              <th style="width: 75%; text-align: right; padding-right: 20px; -webkit-print-color-adjust: exact; print-color-adjust: exact;">ספר הלימוד ופרטים</th>
-              <th style="width: 25%; text-align: center; -webkit-print-color-adjust: exact; print-color-adjust: exact;">סוג הספר</th>
+              <th style="width: 48%; text-align: right; padding-right: 20px; -webkit-print-color-adjust: exact; print-color-adjust: exact;">ספר הלימוד ופרטים</th>
+              <th style="width: 22%; text-align: center; -webkit-print-color-adjust: exact; print-color-adjust: exact;">סוג הספר</th>
+              <th style="width: 30%; text-align: right; padding-right: 20px; -webkit-print-color-adjust: exact; print-color-adjust: exact;">הערות / מידע נוסף</th>
             </tr>
           </thead>
           <tbody>
@@ -699,7 +832,7 @@ export function StudentView({ books }: StudentViewProps) {
   };
 
   // Group current displayed items by subject for render on screen
-  const displayedBySubject: Record<string, { section: string; items: DisplayItem[] }> = {};
+  const displayedBySubject: Record<string, { section: 'regular' | 'math' | 'english' | 'majors'; items: DisplayItem[] }> = {};
   displayedItems.forEach(item => {
     if (!displayedBySubject[item.displaySubject]) {
       displayedBySubject[item.displaySubject] = { section: item.section, items: [] };
@@ -711,23 +844,16 @@ export function StudentView({ books }: StudentViewProps) {
 
   return (
     <div className="space-y-6 print:p-0" dir="rtl">
-      {/* Notice bar at the top */}
-      <div className="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/50 rounded-xl p-4 text-xs sm:text-sm text-blue-900 dark:text-blue-300 leading-relaxed text-right flex items-center gap-2.5 print:hidden shadow-sm">
-        <Info className="text-blue-600 dark:text-blue-400 shrink-0" size={18} />
-        <p className="font-medium">
-          {selectedGrade ? (
-            <span>
-              <strong className="font-extrabold text-blue-900 dark:text-blue-200">שימו לב לסוגי הכיתות: </strong>
-              {GRADE_CLASS_NOTICES[selectedGrade]}
-            </span>
-          ) : (
-            <span>
-              <strong className="font-extrabold text-blue-900 dark:text-blue-200">שימו לב: </strong>
-              בחרו שכבת לימוד למטה כדי לראות את סוגי הכיתות, ההקבצות וספרי הלימוד המותאמים עבורכם.
-            </span>
-          )}
-        </p>
-      </div>
+      {/* Top Notice bar - shown only before selections are made */}
+      {(!selectedGrade || !classMode) && (
+        <div className="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/50 rounded-xl p-4 text-xs sm:text-sm text-blue-900 dark:text-blue-300 leading-relaxed text-right flex items-center gap-2.5 print:hidden shadow-sm">
+          <Info className="text-blue-600 dark:text-blue-400 shrink-0" size={18} />
+          <p className="font-medium">
+            <strong>שימו לב: </strong>
+            להפקת רשימת ספרים בחרו שכבת לימוד מתאימה למטה. עבור כיתות 1-5 (ובחלק מהשכבות גם כיתה 7) בחרו בכפתור הימני.
+          </p>
+        </div>
+      )}
 
       {/* Selector Dashboard Panel */}
       <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 lg:p-8 relative overflow-hidden print:hidden">
@@ -850,6 +976,14 @@ export function StudentView({ books }: StudentViewProps) {
             animate={{ opacity: 1 }}
             className="space-y-6"
           >
+            {/* Yellow Tip Notice - Placed ABOVE the big list header (Not blinking) */}
+            <div className="bg-amber-500/5 border border-amber-200 dark:border-amber-900/40 rounded-xl p-4 text-xs text-amber-800 dark:text-amber-300 leading-relaxed text-right flex items-center gap-3 print:hidden shadow-sm">
+              <span className="size-2 bg-amber-500 rounded-full shrink-0"></span>
+              <p>
+                <strong>טיפ להדפסה:</strong> באפשרותכם למחוק ספרים לא רצויים מהרשימה המוצגת על ידי לחיצה על כפתור המחיקה <Trash2 size={11} className="inline mx-0.5" /> האדום שליד כל ספר. המחיקה תשפיע רק על ההדפסה הנוכחית ולא תשמור שינויים קבועים בקובץ.
+              </p>
+            </div>
+
             {/* Header Title Board Card */}
             <div className="bg-blue-600 text-white rounded-2xl shadow-md p-6 sm:p-8 text-right flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-1.5 bg-blue-500 opacity-60"></div>
@@ -883,6 +1017,17 @@ export function StudentView({ books }: StudentViewProps) {
               </div>
             </div>
 
+            {/* Blue Notice Bar about Class Types - Placed AFTER the list header, before the list itself */}
+            {classMode === 'other' && GRADE_CLASS_NOTICES[selectedGrade] && (
+              <div className="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/50 rounded-xl p-4 text-xs sm:text-sm text-blue-900 dark:text-blue-300 leading-relaxed text-right flex items-center gap-2.5 print:hidden shadow-sm">
+                <Info className="text-blue-600 dark:text-blue-400 shrink-0" size={18} />
+                <p className="font-medium">
+                  <strong className="font-extrabold text-blue-900 dark:text-blue-200">שימו לב לסוגי הכיתות: </strong>
+                  {GRADE_CLASS_NOTICES[selectedGrade]}
+                </p>
+              </div>
+            )}
+
             {/* Error notifications */}
             {printError && (
               <div className="bg-red-50 border border-red-200 text-red-800 rounded-xl p-4 flex items-center gap-3 text-sm">
@@ -890,14 +1035,6 @@ export function StudentView({ books }: StudentViewProps) {
                 <p>הדפסת הקובץ נחסמה על ידי הדפדפן. אנא אפשר חלונות קופצים או לחץ שוב להפעלה.</p>
               </div>
             )}
-
-            {/* Info bar about manual deletion */}
-            <div className="bg-amber-500/5 border border-amber-200 dark:border-amber-900/40 rounded-xl p-4 text-xs text-amber-800 dark:text-amber-300 leading-relaxed text-right flex items-center gap-3 print:hidden">
-              <span className="size-2 bg-amber-500 rounded-full animate-ping shrink-0"></span>
-              <p>
-                <strong>טיפ להדפסה:</strong> באפשרותכם למחוק ספרים לא רצויים מהרשימה המוצגת על ידי לחיצה על כפתור המחיקה <Trash2 size={11} className="inline mx-0.5" /> האדום שליד כל ספר. המחיקה תשפיע רק על ההדפסה הנוכחית ולא תשמור שינויים קבועים בקובץ.
-              </p>
-            </div>
 
             {/* Main textbooks display list container */}
             <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
@@ -913,26 +1050,36 @@ export function StudentView({ books }: StudentViewProps) {
                   <table className="w-full text-right border-collapse text-sm">
                     <thead>
                       <tr className="bg-slate-50 dark:bg-slate-800/40 border-b border-slate-200 dark:border-slate-800 text-slate-500 text-[11px] font-bold uppercase tracking-wider">
-                        <th className="px-6 py-3 w-[70%] text-right pr-6">שם ספר הלימוד</th>
-                        <th className="px-4 py-3 w-[20%] text-center">סוג הספר</th>
+                        <th className="px-6 py-3 w-[43%] text-right pr-6">שם ספר הלימוד</th>
+                        <th className="px-4 py-3 w-[22%] text-center">סוג הספר</th>
+                        <th className="px-6 py-3 w-[25%] text-right">הערות / פרטים נוספים</th>
                         <th className="px-6 py-3 w-[10%] text-center print:hidden">פעולה</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
                       {(() => {
-                        let currentSection: 'regular' | 'math_english' | 'majors' | null = null;
+                        let currentSection: 'regular' | 'math' | 'english' | 'majors' | null = null;
 
                         return sortedSubjectsKeys.map(subjectHeader => {
                           const { section, items } = displayedBySubject[subjectHeader];
                           const rows: React.ReactNode[] = [];
 
-                          // If we cross into Math/English or Majors, render a section header block
-                          if (section === 'math_english' && currentSection !== 'math_english') {
-                            currentSection = 'math_english';
+                          // If we cross into Math, English, or Majors, render a section header block
+                          if (section === 'math' && currentSection !== 'math') {
+                            currentSection = 'math';
                             rows.push(
-                              <tr key="sec-math_english-header" className="bg-blue-600/10 dark:bg-blue-900/30 border-y border-blue-200 dark:border-blue-900/60">
-                                <td colSpan={3} className="px-6 py-4 text-right text-sm sm:text-base font-extrabold text-blue-900 dark:text-blue-300">
-                                  מתמטיקה ואנגלית (כלל ההקבצות בסדר יורד)
+                              <tr key="sec-math-header" className="bg-blue-600/10 dark:bg-blue-900/30 border-y border-blue-200 dark:border-blue-900/60">
+                                <td colSpan={4} className="px-6 py-4 text-right text-sm sm:text-base font-extrabold text-blue-900 dark:text-blue-300">
+                                  מתמטיקה
+                                </td>
+                              </tr>
+                            );
+                          } else if (section === 'english' && currentSection !== 'english') {
+                            currentSection = 'english';
+                            rows.push(
+                              <tr key="sec-english-header" className="bg-blue-600/10 dark:bg-blue-900/30 border-y border-blue-200 dark:border-blue-900/60">
+                                <td colSpan={4} className="px-6 py-4 text-right text-sm sm:text-base font-extrabold text-blue-900 dark:text-blue-300">
+                                  אנגלית
                                 </td>
                               </tr>
                             );
@@ -940,37 +1087,37 @@ export function StudentView({ books }: StudentViewProps) {
                             currentSection = 'majors';
                             rows.push(
                               <tr key="sec-majors-header" className="bg-indigo-600/10 dark:bg-indigo-900/30 border-y border-indigo-200 dark:border-indigo-900/60">
-                                <td colSpan={3} className="px-6 py-4 text-right text-sm sm:text-base font-extrabold text-indigo-900 dark:text-indigo-300">
+                                <td colSpan={4} className="px-6 py-4 text-right text-sm sm:text-base font-extrabold text-indigo-900 dark:text-indigo-300">
                                   מגמות לימוד
                                 </td>
                               </tr>
                             );
                           }
 
-                          // Push the subject header row
-                          rows.push(
-                            <tr key={`subj-${subjectHeader}`} className="bg-slate-50 dark:bg-slate-800 border-y border-slate-200 dark:border-slate-750">
-                              <td colSpan={3} className="px-6 py-3 text-right text-xs sm:text-sm font-extrabold text-blue-700 dark:text-blue-400 bg-blue-500/[0.03]">
-                                {subjectHeader}
-                              </td>
-                            </tr>
-                          );
+                          // Push the subject header row / stream row
+                          if (subjectHeader === 'אנגלית') {
+                            const label = selectedGrade === 'י"ב' ? 'נדרש לכולם (פרט למסיימים)' : 'נדרש לכולם';
+                            rows.push(
+                              <tr key="subj-english-required-header" className="bg-blue-500/10 dark:bg-blue-950/20 border-y border-blue-250 dark:border-blue-900/40">
+                                <td colSpan={4} className="px-6 py-3 text-right text-xs sm:text-sm font-extrabold text-blue-800 dark:text-blue-300 bg-blue-500/[0.05]">
+                                  {label}
+                                </td>
+                              </tr>
+                            );
+                          } else {
+                            rows.push(
+                              <tr key={`subj-${subjectHeader}`} className="bg-slate-50 dark:bg-slate-800 border-y border-slate-200 dark:border-slate-750">
+                                <td colSpan={4} className="px-6 py-3 text-right text-xs sm:text-sm font-extrabold text-blue-700 dark:text-blue-400 bg-blue-500/[0.03]">
+                                  {subjectHeader}
+                                </td>
+                              </tr>
+                            );
+                          }
 
                           // Push books rows
                           items.forEach(item => {
                             const book = item.book;
                             const bType = book.bookType || 'ספר לימוד / קריאה';
-                            
-                            // Add "נדרש לכולם" header row above the English dictionary book
-                            if (book.id === 'english_dict') {
-                              rows.push(
-                                <tr key="subj-english-required-header" className="bg-blue-500/10 dark:bg-blue-950/20 border-y border-blue-250 dark:border-blue-900/40">
-                                  <td colSpan={3} className="px-6 py-2.5 text-right text-xs sm:text-sm font-black text-blue-800 dark:text-blue-300">
-                                    נדרש לכולם
-                                  </td>
-                                </tr>
-                              );
-                            }
 
                             let bTypeStyle = 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border-transparent';
                             if (bType === 'חוברת עבודה') {
@@ -992,16 +1139,20 @@ export function StudentView({ books }: StudentViewProps) {
                                     <span>מחבר / הוצאה: <strong>{book.author || '-'}</strong></span>
                                     {book.price && <span>מחיר משוער: <strong>₪{book.price}</strong></span>}
                                   </div>
-                                  {book.notes && (
-                                    <div className="text-[11px] text-slate-500 dark:text-slate-400 mt-1.5 bg-slate-50 dark:bg-slate-950 px-2 py-1.5 rounded-lg border border-slate-100 dark:border-slate-850 inline-block font-sans">
-                                      <strong>הערה:</strong> {book.notes}
-                                    </div>
-                                  )}
                                 </td>
                                 <td className="px-4 py-4 text-center">
                                   <span className={`inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold border ${bTypeStyle}`}>
                                     {bType}
                                   </span>
+                                </td>
+                                <td className="px-6 py-4 text-right">
+                                  {book.notes ? (
+                                    <div className="text-[11px] text-slate-600 dark:text-slate-350 bg-slate-50 dark:bg-slate-950 px-2.5 py-2 rounded-xl border border-slate-150 dark:border-slate-800/80 inline-block font-sans">
+                                      {book.notes}
+                                    </div>
+                                  ) : (
+                                    <span className="text-slate-400 font-bold">-</span>
+                                  )}
                                 </td>
                                 <td className="px-6 py-4 text-center print:hidden">
                                   <button

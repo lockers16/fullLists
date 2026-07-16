@@ -6,7 +6,25 @@
 import { Book, GradeLevel, SelectionState } from './types';
 import booksData from './books.json';
 
-export const DEFAULT_BOOKS: Book[] = booksData as Book[];
+const rawBooks: Book[] = booksData as Book[];
+
+export const DEFAULT_BOOKS: Book[] = rawBooks.map(book => {
+  const bType = book.bookType;
+  const validTypes = ['ספר לימוד / קריאה', 'חוברת עבודה', 'לא בהשאלת הספרים'];
+  
+  if (bType && validTypes.includes(bType)) {
+    return book;
+  }
+  
+  // Fallback if not explicitly set or not valid
+  const titleLower = (book.title || '').toLowerCase();
+  const hasWord = titleLower.includes('חוברת') || titleLower.includes('workbook');
+  
+  return {
+    ...book,
+    bookType: hasWord ? 'חוברת עבודה' : 'ספר לימוד / קריאה'
+  };
+});
 
 // Options logic depending on status
 export function getEnglishOptions(grade: GradeLevel | ''): string[] {
