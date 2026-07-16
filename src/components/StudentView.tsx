@@ -403,10 +403,18 @@ export function StudentView({ books }: StudentViewProps) {
       if (['מתמטיקה', 'אנגלית'].includes(subjectName)) {
         // Mathematics and English - show books grouped by stream
         subjectBooks.forEach(book => {
-          if (book.id === 'english_dict') {
-            // Virtual dictionary applies to all classes in this mode
+          const isDictionary = book.id === 'english_dict' || 
+                               book.title === 'מילון אנגלי-עברי עברי-אנגלי (אוקספורד/מורפיקס) או מילונית אלקטרונית מאושרת' ||
+                               book.title === 'מילון עברי/אנגלי-אנגלי/עברי או מילונית אלקטרונית מאושרת';
+
+          if (isDictionary) {
+            // Virtual dictionary / any dictionary applies to all classes in this mode as general English
             const applies = classesToCheck.some(c => bookAppliesToClass(book, selectedGrade, c));
             if (!applies) return;
+
+            // Avoid duplicates
+            const alreadyExists = items.some(item => item.book.id === book.id || item.book.title === book.title);
+            if (alreadyExists) return;
 
             items.push({
               uniqueId: `${book.id}_${classMode}`,
