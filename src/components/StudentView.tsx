@@ -66,9 +66,19 @@ function getStreamFromDisplaySubject(displaySubject: string): string {
   const start = displaySubject.indexOf('(');
   const end = displaySubject.indexOf(')');
   if (start !== -1 && end !== -1 && end > start) {
-    return displaySubject.substring(start + 1, end).trim();
+    const raw = displaySubject.substring(start + 1, end).trim();
+    if (raw === "א'") return 'א';
+    if (raw === "ב'") return 'ב';
+    return raw;
   }
   return '';
+}
+
+// Helper to format stream names (e.g., 'א' -> "א'", 'ב' -> "ב'")
+function formatStreamForDisplay(stream: string): string {
+  if (stream === 'א') return "א'";
+  if (stream === 'ב') return "ב'";
+  return stream;
 }
 
 // Helper to get book streams for a grade
@@ -285,13 +295,13 @@ export function StudentView({ books }: StudentViewProps) {
   const bookAppliesToClass = (book: Book, grade: GradeLevel, classNum: number): boolean => {
     let targetClass = classNum;
     
-    const isTanachInZaynOrChet = (['ז', 'ח'].includes(grade) && book.subject === 'תנ"ך');
+    const isTanachSpecialGrade = (['ז', 'ח', 'י', 'י"א'].includes(grade) && book.subject === 'תנ"ך');
     
     // Check grade match first
     const hasGradeMatch = (book.associations && book.associations.some(assoc => assoc.grade === grade)) ||
                            (book.grades && book.grades.includes(grade));
                            
-    if (isTanachInZaynOrChet && hasGradeMatch) {
+    if (isTanachSpecialGrade && hasGradeMatch) {
       return true;
     }
     
@@ -432,7 +442,7 @@ export function StudentView({ books }: StudentViewProps) {
                     const applies = classesToCheck.some(c => bookAppliesToClass(book, selectedGrade, c));
                     if (!applies) return;
 
-                    const displaySubject = `${subjectName} (${stream})`;
+                    const displaySubject = `${subjectName} (${formatStreamForDisplay(stream)})`;
                     items.push({
                       uniqueId: `${book.id}_${classMode}_${stream}_${displaySubject}`,
                       book,
@@ -459,7 +469,7 @@ export function StudentView({ books }: StudentViewProps) {
                   const applies = classesToCheck.some(c => bookAppliesToClass(book, selectedGrade, c));
                   if (!applies) return;
 
-                  const displaySubject = `${subjectName} (${stream})`;
+                  const displaySubject = `${subjectName} (${formatStreamForDisplay(stream)})`;
                   items.push({
                     uniqueId: `${book.id}_${classMode}_${stream}_${displaySubject}`,
                     book,
